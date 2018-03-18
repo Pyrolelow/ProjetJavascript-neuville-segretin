@@ -2,17 +2,23 @@
 
 $('document').ready(function() {
    
+
   let marteau = $("#marteau");
   var spanPrixMarteur = $("#prixMarteau");
   let titre = $("title");
-  console.log(spanPrixMarteur);
   var nombreDeFer = 0;
   var nbMarteau = 0;
   var Ferparclick = 1;
   var PrixMarteau = 10;
-  var achatMart = document.getElementById('nbMarteau');
+  baseInterval = 1000;
   var image = document.getElementById("enclume");
   var resultat = document.getElementById("Indicateur");
+  var achatMart = document.getElementById('nbMarteau');
+  var nbForgeron = 0;
+  var autoForgeron = 0;
+  let forgeron = $("#forgeron");
+  var achatForgeron = document.getElementById('nbForgeron');
+
 
   
   document.onload = function () { 
@@ -31,6 +37,11 @@ $('document').ready(function() {
     spanPrixMarteur.text(PrixMarteau);
   }
  
+ function update () {
+  console.log('update');
+  nombreDeFer += autoForgeron;
+  afficherScore();
+ }
 
   marteau.click( function () {
     if(nombreDeFer >= PrixMarteau) {
@@ -39,6 +50,17 @@ $('document').ready(function() {
       nombreDeFer = nombreDeFer - PrixMarteau;
       PrixMarteau = PrixMarteau*3;
       Ferparclick = Ferparclick * 2;
+    }else{
+      alert("Continuez vos efforts !");
+    }
+  });
+
+  forgeron.click( function () {
+    if(nombreDeFer >= 1500) {
+      nbForgeron++;
+      autoForgeron += 1;
+      achatForgeron.innerHTML = nbForgeron;
+      nombreDeFer -= 1500;
       afficherScore();
       afficherPrixMarteau();
     }else{
@@ -50,5 +72,9 @@ $('document').ready(function() {
       nombreDeFer = nombreDeFer + Ferparclick;
       afficherScore();
   });
+
+  window.setInterval( function() {
+    update();
+  },baseInterval);
 
 });
