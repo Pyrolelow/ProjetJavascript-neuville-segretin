@@ -1,85 +1,100 @@
 
 
 $('document').ready(function() {
-   
-
-  let marteau = $("#marteau");
-  var spanPrixMarteur = $("#prixMarteau");
-  let titre = $("title");
-  var nombreDeFer = 0;
-  var nbMarteau = 0;
-  var Ferparclick = 1;
-  var PrixMarteau = 10;
+  
 
   baseInterval = 1000;
+  let titre = $("title");
 
   var image = document.getElementById("enclume");
-
   var resultat = document.getElementById("Indicateur");
+  var nombreDeFer = 0;
+  var Ferparclick = 1;
+
+
+  let marteau = $("#marteau");
+  var nbMarteau = 0;
+  var prixMarteau = 10;
   var achatMart = document.getElementById('nbMarteau');
+  var spanPrixMarteur = $("#prixMarteau");
+
   
+  let forgeron = $("#forgeron");
   var nbForgeron = 0;
   var autoForgeron = 0;
-  let forgeron = $("#forgeron");
+  var prixForgeron = 1000;
   var achatForgeron = document.getElementById('nbForgeron');
-
-
+  var spanPrixForgeron = $("#prixForgeron");
   
-  document.onload = function () { 
-      afficherScore();
-      afficherPrixMarteau();
-  }
 
+  document.onload = function () { 
+    afficherScore();
+  }
 
 
   function afficherScore () {
-    resultat.innerHTML = "Ressources : " + nombreDeFer;
+    resultat.innerHTML = nombreDeFer;
     titre.text(nombreDeFer + " Fer");
     afficherPrixMarteau();
+    afficherPrixForgeron();
   }
+
 
   function afficherPrixMarteau (){
-    spanPrixMarteur.text(PrixMarteau);
+    spanPrixMarteur.text(prixMarteau);
   }
  
- function update () {
-  console.log('update');
-  nombreDeFer += autoForgeron;
-  afficherScore();
- }
+
+  function afficherPrixForgeron (){
+    spanPrixForgeron.text(prixForgeron);
+  }
+
+
+  function update () {
+    nombreDeFer += autoForgeron;
+    afficherScore();
+  }
+
 
   marteau.click( function () {
-    if(nombreDeFer >= PrixMarteau) {
-      nbMarteau = nbMarteau + 1;
+    if(nombreDeFer >= prixMarteau) {
+      nbMarteau++;
       achatMart.innerHTML = nbMarteau;
-      nombreDeFer = nombreDeFer - PrixMarteau;
-      PrixMarteau = PrixMarteau*3;
-      Ferparclick = Ferparclick * 2;
+      nombreDeFer -= prixMarteau;
+      prixMarteau *= 3;
+      Ferparclick *= 2;
+      afficherPrixMarteau();
+      afficherScore();
     }else{
       alert("Continuez vos efforts !");
     }
   });
 
+
   forgeron.click( function () {
-    if(nombreDeFer >= 1000) {
+    if(nombreDeFer >= prixForgeron) {
       nbForgeron++;
       autoForgeron += 5;
       achatForgeron.innerHTML = nbForgeron;
-      nombreDeFer -= 1000;
+      nombreDeFer -= prixForgeron;
+      prixForgeron *= 2;
+      afficherPrixForgeron();
       afficherScore();
-      afficherPrixMarteau();
     }else{
       alert("Continuez vos efforts !");
     }
   });
 
+
   image.addEventListener("click", function () {
-      nombreDeFer = nombreDeFer + Ferparclick;
+      nombreDeFer += Ferparclick;
       afficherScore();
   });
+
 
   window.setInterval( function() {
     update();
   },baseInterval);
+
 
 });
