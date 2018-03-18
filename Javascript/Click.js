@@ -31,6 +31,7 @@ $('document').ready(function() {
   function afficherScore () {
     resultat.innerHTML = "Ressources : " + nombreDeFer;
     titre.text(nombreDeFer + " Fer");
+    afficherPrixMarteau();
   }
 
   function afficherPrixMarteau (){
