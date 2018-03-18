@@ -10,10 +10,14 @@ $('document').ready(function() {
   var nbMarteau = 0;
   var Ferparclick = 1;
   var PrixMarteau = 10;
+
   baseInterval = 1000;
+
   var image = document.getElementById("enclume");
+
   var resultat = document.getElementById("Indicateur");
   var achatMart = document.getElementById('nbMarteau');
+  
   var nbForgeron = 0;
   var autoForgeron = 0;
   let forgeron = $("#forgeron");
@@ -57,11 +61,11 @@ $('document').ready(function() {
   });
 
   forgeron.click( function () {
-    if(nombreDeFer >= 1500) {
+    if(nombreDeFer >= 1000) {
       nbForgeron++;
-      autoForgeron += 1;
+      autoForgeron += 5;
       achatForgeron.innerHTML = nbForgeron;
-      nombreDeFer -= 1500;
+      nombreDeFer -= 1000;
       afficherScore();
       afficherPrixMarteau();
     }else{
