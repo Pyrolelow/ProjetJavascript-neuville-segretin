@@ -1,5 +1,30 @@
-#enclume{
+#lingotFer{
     width: 200px;
     height: 200px;
 }
+
+#bois{
+    width: 200px;
+    height: 200px;
+}
+
+#cuir{
+    width: 200px;
+    height: 200px;
+}
+
+#fenetre{
+	display: flex;
+	justify-content: center;
+	flex-direction: row-nowrap;
+}
+
+body{
+	margin: 0px;
+    padding: 0px;
+	background: url(../images/background.jpg);
+	background-repeat:no-repeat;
+    background-size: cover;
+}
+
 

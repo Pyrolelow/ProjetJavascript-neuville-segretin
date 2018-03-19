@@ -1,15 +1,13 @@
-
-
 $('document').ready(function() {
   
 
   baseInterval = 1000;
   let titre = $("title");
 
-  var image = document.getElementById("enclume");
-  var resultat = document.getElementById("Indicateur");
+  var image = document.getElementById("lingotFer");
+  var resultat = document.getElementById("IndicateurFer");
   var nombreDeFer = 0;
-  var Ferparclick = 1;
+  var ferParClick = 1;
 
 
   let marteau = $("#marteau");
@@ -62,7 +60,7 @@ $('document').ready(function() {
       achatMart.innerHTML = nbMarteau;
       nombreDeFer -= prixMarteau;
       prixMarteau *= 3;
-      Ferparclick *= 2;
+      ferParClick *= 2;
       afficherPrixMarteau();
       afficherScore();
     }else{
@@ -87,7 +85,7 @@ $('document').ready(function() {
 
 
   image.addEventListener("click", function () {
-      nombreDeFer += Ferparclick;
+      nombreDeFer += ferParClick;
       afficherScore();
   });
 

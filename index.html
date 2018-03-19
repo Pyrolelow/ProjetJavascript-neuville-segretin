@@ -5,19 +5,45 @@
     <title></title>
     <link rel="stylesheet" href="CSS/Style.css"/>
     <script type="text/javascript" src="Javascript/jquery-3.3.1.js" ></script>
-    <script type="text/javascript" src="Javascript/Click.js" ></script>
+    <script type="text/javascript" src="Javascript/Bois.js" ></script>
+    <script type="text/javascript" src="Javascript/Cuir.js" ></script>
+    <script type="text/javascript" src="Javascript/Fer.js" ></script>
 </head>
 <body>
-  <div href="fenetre">
-    <img id="enclume" src="images/Heavy_Hat_icon.png"/>
-    <p>Ressources : <span id="Indicateur"></span></p>
-    <hr>
-    <p><button id="marteau">Acheter un marteau x2</button> Coût : <span id="prixMarteau"></span>
-    <h3>Marteaux achetés : <span id="nbMarteau">0</span></h3>
-    <hr>
-    <p><button id="forgeron">Acheter forgeron +5</button> Coût : <span id="prixForgeron"></span></p>
-    <h3>Forgerons achetés : <span id="nbForgeron">0</span></h3>
-    <hr>
+  <div id="fenetre">
+    <div id="boisInterface">
+        <img id="bois" src="images/bois.png"/>
+        <p>Bois : <span id="IndicateurBois"></span></p>
+        <hr>
+        <p><button id="hache">Acheter une hache x2</button> Coût : <span id="prixHache"></span>
+        <h3>Haches achetées : <span id="nbHache">0</span></h3>
+        <hr>
+        <p><button id="bucheron">Acheter bucheron +5</button> Coût : <span id="prixBucheron"></span></p>
+        <h3>Bucherons achetés : <span id="nbBucheron">0</span></h3>
+        <hr>
+    </div>
+    <div id="cuirInterface">
+        <img id="cuir" src="images/cuir.png"/>
+        <p>Cuir : <span id="IndicateurCuir"></span></p>
+        <hr>
+        <p><button id="scie">Acheter une scie x2</button> Coût : <span id="prixScie"></span>
+        <h3>Scies achetées : <span id="nbScie">0</span></h3>
+        <hr>
+        <p><button id="tanneur">Acheter tanneur +5</button> Coût : <span id="prixTanneur"></span></p>
+        <h3>Tanneurs achetés : <span id="nbTanneur">0</span></h3>
+        <hr>
+    </div>
+    <div id="ferInterface">
+        <img id="lingotFer" src="images/fer.png"/>
+        <p>Fer : <span id="IndicateurFer"></span></p>
+        <hr>
+        <p><button id="marteau">Acheter un marteau x2</button> Coût : <span id="prixMarteau"></span>
+        <h3>Marteaux achetés : <span id="nbMarteau">0</span></h3>
+        <hr>
+        <p><button id="forgeron">Acheter forgeron +5</button> Coût : <span id="prixForgeron"></span></p>
+        <h3>Forgerons achetés : <span id="nbForgeron">0</span></h3>
+        <hr>
+    </div>
   </div>
 </body>
 
