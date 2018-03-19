@@ -1,17 +1,17 @@
 #lingotFer{
-    padding-left: 47px;
+    padding-left: 30px;
     width: 200px;
     height: 200px;
 }
 
 #bois{
-    padding-left: 50px;
+    padding-left: 30px;
     width: 200px;
     height: 200px;
 }
 
 #cuir{
-    padding-left: 50px;
+    padding-left: 30px;
     width: 200px;
     height: 200px;
 }
@@ -40,7 +40,7 @@
 }
 
 #marteau{
-    width: 100px;
+    width: 95px;
     height: 69px;
 }
 
@@ -106,7 +106,7 @@ body{
 #fintab{
     margin: 0px;
     padding: 0px;
-    width: 20px;
+    width: 23px;
     background: url(../images/fintab.jpg);
     background-repeat:no-repeat;
     background-size: cover;
