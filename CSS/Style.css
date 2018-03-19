@@ -1,30 +1,67 @@
 #lingotFer{
+    padding-left: 47px;
     width: 200px;
     height: 200px;
 }
 
 #bois{
+    padding-left: 50px;
     width: 200px;
     height: 200px;
 }
 
 #cuir{
+    padding-left: 50px;
     width: 200px;
     height: 200px;
 }
 
-#fenetre{
-	display: flex;
-	justify-content: center;
-	flex-direction: row-nowrap;
-}
-
 body{
-	margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: Trebuchet MS, sans-serif;
+    margin: 0px;
     padding: 0px;
-	background: url(../images/background.jpg);
-	background-repeat:no-repeat;
+    background-color: red;
+    background: url(../images/background.jpg);
+    background-repeat:no-repeat;
     background-size: cover;
 }
 
+#fenetre{
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    /*background-color: pink;*/
+    justify-content: center;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
+#boisInterface{
+    margin: 0px;
+    padding: 25px;
+    width: 300px;
+    background: url(../images/foret.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#cuirInterface{
+    margin: 0px;
+    padding: 25px;
+    width: 300px;
+    background: url(../images/champ.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#ferInterface{
+    margin: 0px;
+    padding: 25px;
+    width: 300px;
+    background: url(../images/mine.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
