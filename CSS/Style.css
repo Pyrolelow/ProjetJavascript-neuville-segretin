@@ -16,6 +16,40 @@
     height: 200px;
 }
 
+#hache{
+    padding-left: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+#bucheron{
+    padding-top: 3px;
+    width: 75px;
+    height: 75px;
+}
+
+#scie{
+    width: 100px;
+    height: 69px;
+}
+
+#tanneur{
+    padding-left: 10px;
+    width: 40px;
+    height: 79px;
+}
+
+#marteau{
+    width: 100px;
+    height: 69px;
+}
+
+#forgeron{
+    padding-left: 10px;
+    width: 40px;
+    height: 79px;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -40,6 +74,7 @@ body{
 }
 
 #boisInterface{
+    text-align: center;
     margin: 0px;
     padding: 25px;
     width: 300px;
@@ -49,6 +84,7 @@ body{
 }
 
 #cuirInterface{
+    text-align: center;
     margin: 0px;
     padding: 25px;
     width: 300px;
@@ -58,10 +94,20 @@ body{
 }
 
 #ferInterface{
+    text-align: center;
     margin: 0px;
     padding: 25px;
     width: 300px;
     background: url(../images/mine.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#fintab{
+    margin: 0px;
+    padding: 0px;
+    width: 20px;
+    background: url(../images/fintab.jpg);
     background-repeat:no-repeat;
     background-size: cover;
 }
