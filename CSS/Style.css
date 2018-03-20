@@ -53,6 +53,7 @@
 body{
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: Trebuchet MS, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -80,7 +81,7 @@ body{
     width: 300px;
     background: url(../images/foret.jpg);
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 #cuirInterface{
@@ -90,7 +91,7 @@ body{
     width: 300px;
     background: url(../images/champ.jpg);
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 #ferInterface{
@@ -100,14 +101,5 @@ body{
     width: 300px;
     background: url(../images/mine.jpg);
     background-repeat:no-repeat;
-    background-size: cover;
-}
-
-#fintab{
-    margin: 0px;
-    padding: 0px;
-    width: 23px;
-    background: url(../images/fintab.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
+   background-size: 100% 100%;
 }
