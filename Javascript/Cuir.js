@@ -1,4 +1,6 @@
 var nombreDeCuir = 0;
+var cuirParClick = 1;
+var autoTanneur = 0;
 $('document').ready(function() {
   
 
@@ -8,7 +10,7 @@ $('document').ready(function() {
   var image = document.getElementById("cuir");
   var resultat = document.getElementById("IndicateurCuir");
   
-  var cuirParClick = 1;
+  
 
 
   let couteau = $("#clickCouteau");
@@ -20,7 +22,6 @@ $('document').ready(function() {
   
   let tanneur = $("#clickTanneur");
   var nbTanneur = 0;
-  var autoTanneur = 0;
   var prixTanneur = 1000;
   var achatTanneur = document.getElementById('nbTanneur');
   var spanPrixTanneur = $("#prixTanneur");

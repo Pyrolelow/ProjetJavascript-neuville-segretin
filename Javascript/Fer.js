@@ -1,4 +1,6 @@
 var nombreDeFer = 0;
+var ferParClick = 1;
+var autoForgeron = 0;
 
 $('document').ready(function() {
   
@@ -9,7 +11,6 @@ $('document').ready(function() {
   var image = document.getElementById("lingotFer");
   var resultat = document.getElementById("IndicateurFer");
   
-  var ferParClick = 1;
 
 
   let marteau = $("#clickMarteau");
@@ -21,7 +22,6 @@ $('document').ready(function() {
   
   let forgeron = $("#clickForgeron");
   var nbForgeron = 0;
-  var autoForgeron = 0;
   var prixForgeron = 1000;
   var achatForgeron = document.getElementById('nbForgeron');
   var spanPrixForgeron = $("#prixForgeron");
@@ -53,11 +53,6 @@ $('document').ready(function() {
   function update () {
     nombreDeFer += autoForgeron;
     afficherScore();
-    var a = 30;
-    for(var i = 0; i<10;i++){
-      a*=2;
-    }
-    console.log(a);
   }
 
 

@@ -1,4 +1,7 @@
 var nombreDeBois = 0;
+var boisParClick = 1;
+var autoBucheron = 0;
+
 $('document').ready(function() {
   
 
@@ -7,8 +10,6 @@ $('document').ready(function() {
 
   var image = document.getElementById("bois");
   var resultat = document.getElementById("IndicateurBois");
-  
-  var boisParClick = 1;
 
 
   let hache = $("#clickHache");
@@ -20,7 +21,7 @@ $('document').ready(function() {
   
   let bucheron = $("#clickBucheron");
   var nbBucheron = 0;
-  var autoBucheron = 0;
+  
   var prixBucheron = 1000;
   var achatBucheron = document.getElementById('nbBucheron');
   var spanPrixBucheron = $("#prixBucheron");
