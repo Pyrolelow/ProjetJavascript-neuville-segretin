@@ -11,14 +11,14 @@ $('document').ready(function() {
   var cuirParClick = 1;
 
 
-  let couteau = $("#couteau");
+  let couteau = $("#clickCouteau");
   var nbCouteau = 0;
   var prixCouteau = 10;
   var achatCouteau = document.getElementById('nbCouteau');
   var spanPrixCouteau = $("#prixCouteau");
 
   
-  let tanneur = $("#tanneur");
+  let tanneur = $("#clickTanneur");
   var nbTanneur = 0;
   var autoTanneur = 0;
   var prixTanneur = 1000;

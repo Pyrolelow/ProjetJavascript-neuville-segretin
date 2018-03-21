@@ -11,14 +11,14 @@ $('document').ready(function() {
   var boisParClick = 1;
 
 
-  let hache = $("#hache");
+  let hache = $("#clickHache");
   var nbHache = 0;
   var prixHache = 10;
   var achatHache = document.getElementById('nbHache');
   var spanPrixHache = $("#prixHache");
 
   
-  let bucheron = $("#bucheron");
+  let bucheron = $("#clickBucheron");
   var nbBucheron = 0;
   var autoBucheron = 0;
   var prixBucheron = 1000;

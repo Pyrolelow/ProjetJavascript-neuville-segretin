@@ -12,14 +12,14 @@ $('document').ready(function() {
   var ferParClick = 1;
 
 
-  let marteau = $("#marteau");
+  let marteau = $("#clickMarteau");
   var nbMarteau = 0;
   var prixMarteau = 10;
   var achatMart = document.getElementById('nbMarteau');
   var spanPrixMarteur = $("#prixMarteau");
 
   
-  let forgeron = $("#forgeron");
+  let forgeron = $("#clickForgeron");
   var nbForgeron = 0;
   var autoForgeron = 0;
   var prixForgeron = 1000;
@@ -53,6 +53,11 @@ $('document').ready(function() {
   function update () {
     nombreDeFer += autoForgeron;
     afficherScore();
+    var a = 30;
+    for(var i = 0; i<10;i++){
+      a*=2;
+    }
+    console.log(a);
   }
 
 
