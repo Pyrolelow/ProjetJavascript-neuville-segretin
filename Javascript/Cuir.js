@@ -10,11 +10,11 @@ $('document').ready(function() {
   var cuirParClick = 1;
 
 
-  let scie = $("#scie");
-  var nbScie = 0;
-  var prixScie = 10;
-  var achatScie = document.getElementById('nbScie');
-  var spanPrixScie = $("#prixScie");
+  let couteau = $("#couteau");
+  var nbCouteau = 0;
+  var prixCouteau = 10;
+  var achatCouteau = document.getElementById('nbCouteau');
+  var spanPrixCouteau = $("#prixCouteau");
 
   
   let tanneur = $("#tanneur");
@@ -32,13 +32,13 @@ $('document').ready(function() {
 
   function afficherScore () {
     resultat.innerHTML = nombreDeCuir;
-    afficherPrixScie();
+    afficherPrixCouteau();
     afficherPrixTanneur();
   }
 
 
-  function afficherPrixScie (){
-    spanPrixScie.text(prixScie);
+  function afficherPrixCouteau (){
+    spanPrixCouteau.text(prixCouteau);
   }
  
 
@@ -53,14 +53,14 @@ $('document').ready(function() {
   }
 
 
-  scie.click( function () {
-    if(nombreDeCuir >= prixScie) {
-      nbScie++;
-      achatScie.innerHTML = nbScie;
-      nombreDeCuir -= prixScie;
-      prixScie *= 3;
+  couteau.click( function () {
+    if(nombreDeCuir >= prixCouteau) {
+      nbCouteau++;
+      achatCouteau.innerHTML = nbCouteau;
+      nombreDeCuir -= prixCouteau;
+      prixCouteau *= 3;
       cuirParClick *= 2;
-      afficherPrixScie();
+      afficherPrixCouteau();
       afficherScore();
     }else{
       alert("Continuez vos efforts !");
