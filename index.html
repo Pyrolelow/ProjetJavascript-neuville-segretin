@@ -8,49 +8,61 @@
     <script type="text/javascript" src="Javascript/Bois.js" ></script>
     <script type="text/javascript" src="Javascript/Cuir.js" ></script>
     <script type="text/javascript" src="Javascript/Fer.js" ></script>
+    <script type="text/javascript" src="Javascript/Personnage.js" ></script>
 </head>
 <body>
   <div id="fenetre">
     <div id="boisInterface">
         <img id="bois" src="images/bois.png"/>
         <p>Bois : <span id="IndicateurBois"></span></p>
-        <hr>
-        <h3>Acheter une hache (x2)</h3>
-        <p><img id="hache" src="images/hache.png"/> Prix : <span id="prixHache"></span> Bois</p>
-        <h3>Haches achetées : <span id="nbHache">0</span></h3>
-        <hr>
-        <h3>Embaucher bucheron (+5)</h3>
-        <p><img id="bucheron" src="images/bucheron.png"/> Prix : <span id="prixBucheron"></span> Bois</p>
-        <h3>Bucherons embauchés : <span id="nbBucheron">0</span></h3>
+        <div id="planche">
+            <br>
+            <h3>Acheter une hache (x2)</h3>
+            <p><img id="hache" src="images/hache.png"/> Prix : <span id="prixHache"></span> Bois</p>
+            <h3>Haches achetées : <span id="nbHache">0</span></h3>
+        </div>
+        <div id="planche">
+            <br>
+            <h3>Embaucher bucheron (+5)</h3>
+            <p><img id="bucheron" src="images/bucheron.png"/> Prix : <span id="prixBucheron"></span> Bois</p>
+            <h3>Bucherons embauchés : <span id="nbBucheron">0</span></h3>
+        </div>
     </div>
     <div id="cuirInterface">
         <img id="cuir" src="images/cuir.png"/>
         <p>Cuir : <span id="IndicateurCuir"></span></p>
-        <hr>
-        <h3>Acheter une scie (x2)</h3>
-        <p><img id="scie" src="images/scie.png"/> Prix : <span id="prixScie"></span> Cuirs</p>
-        <h3>Scies achetées : <span id="nbScie">0</span></h3>
-        <hr>
-        <h3>Embaucher tanneur (+5)</h3>
-        <p><img id="tanneur" src="images/tanneur.png"/> Prix : <span id="prixTanneur"></span> Cuirs</p>
-        <h3>Tanneurs embauchés : <span id="nbTanneur">0</span></h3>
+        <div id="planche">
+            <br>
+            <h3>Acheter une scie (x2)</h3>
+            <p><img id="scie" src="images/scie.png"/> Prix : <span id="prixScie"></span> Cuirs</p>
+            <h3>Scies achetées : <span id="nbScie">0</span></h3>
+        </div>
+        <div id="planche">
+            <br>
+            <h3>Embaucher tanneur (+5)</h3>
+            <p><img id="tanneur" src="images/tanneur.png"/> Prix : <span id="prixTanneur"></span> Cuirs</p>
+            <h3>Tanneurs embauchés : <span id="nbTanneur">0</span></h3>
+        </div>
     </div>
     <div id="ferInterface">
         <img id="lingotFer" src="images/fer.png"/>
         <p>Fer : <span id="IndicateurFer"></span></p>
-        <hr>
-        <h3>Acheter un marteau (x2)</h3>
-        <p><img id="marteau" src="images/marteau.png"/> Prix : <span id="prixMarteau"></span> Fers</p>
-        <h3>Marteaux achetés : <span id="nbMarteau">0</span></h3>
-        <hr>
-        <h3>Embaucher forgeron (+5)</h3>
-        <p><img id="forgeron" src="images/forgeron.png"/> Prix : <span id="prixForgeron"></span> Fers</p>
-        <h3>Forgerons embauchés : <span id="nbForgeron">0</span></h3>
+        <div id="planche">
+            <br>
+            <h3>Acheter un marteau (x2)</h3>
+            <p><img id="marteau" src="images/marteau.png"/> Prix : <span id="prixMarteau"></span> Fers</p>
+            <h3>Marteaux achetés : <span id="nbMarteau">0</span></h3>
+        </div>
+        <div id="planche">
+            <br>
+            <h3>Embaucher forgeron (+5)</h3>
+            <p><img id="forgeron" src="images/forgeron.png"/> Prix : <span id="prixForgeron"></span> Fers</p>
+            <h3>Forgerons embauchés : <span id="nbForgeron">0</span></h3>
+        </div>
     </div>
     <div id="craftInterface">
         <h3>Épée en bois :</h3>
         <p><img id="epeeEnBois" src="images/epee_en_bois.png">Il vous faut : 200<img id="bois" src="images/bois.png"/> 100<img id="cuir" src="images/cuir.png"/> 0 </p>
-    
     </div>
   </div>
 </body>
