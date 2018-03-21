@@ -37,8 +37,8 @@ $('document').ready(function() {
 
     //Mouse over BOIS 
     plancheHache.mouseover(function(){
-        displayDivInfo("Actuellement : " + boisParClick + " bois pour un click " + '<br/>' +
-                        "Amélioration : " + boisParClick*2 + " bois pour un click");
+        displayDivInfo("Actuellement : " + boisParClick + " bois par click" + '<br/>' +
+                        "Amélioration : " + boisParClick*2 + " bois par click");
     });
     plancheHache.mouseout(function(){
         displayDivInfo();
@@ -46,8 +46,8 @@ $('document').ready(function() {
 
     plancheBucheron.mouseover(function(){
         var bucheronAmelio = autoBucheron +5;
-        displayDivInfo("Actuellement : " + autoBucheron + " bois pour un click " + '<br/>' +
-                        "Amélioration : " + bucheronAmelio + " bois pour un click");
+        displayDivInfo("Actuellement : " + autoBucheron + " bois par seconde" + '<br/>' +
+                        "Amélioration : " + bucheronAmelio + " bois par seconde");
     });
     plancheBucheron.mouseout(function(){
         displayDivInfo();
@@ -56,8 +56,8 @@ $('document').ready(function() {
 
     //Mouse over CUIR
     plancheCouteau.mouseover(function(){
-        displayDivInfo("Actuellement : " + cuirParClick + " bois pour un click " + '<br/>' +
-                        "Amélioration : " + cuirParClick*2 + " bois pour un click");
+        displayDivInfo("Actuellement : " + cuirParClick + " cuir par click" + '<br/>' +
+                        "Amélioration : " + cuirParClick*2 + " cuir par click");
     });
     plancheCouteau.mouseout(function(){
         displayDivInfo();
@@ -65,8 +65,8 @@ $('document').ready(function() {
 
     plancheTanneur.mouseover(function(){
         var tanneurAmelio = autoTanneur +5;
-        displayDivInfo("Actuellement : " + autoTanneur + " bois pour un click " + '<br/>' +
-                        "Amélioration : " + tanneurAmelio + " bois pour un click");
+        displayDivInfo("Actuellement : " + autoTanneur + " cuir par seconde" + '<br/>' +
+                        "Amélioration : " + tanneurAmelio + " cuir par seconde");
     });
     plancheTanneur.mouseout(function(){
         displayDivInfo();
@@ -74,16 +74,16 @@ $('document').ready(function() {
 
     //Mouse over FER
     plancheMarteau.mouseover(function(){
-        displayDivInfo("Actuellement : " + ferParClick + " bois pour un click " + '<br/>' +
-                        "Amélioration : " + ferParClick*2 + " bois pour un click");
+        displayDivInfo("Actuellement : " + ferParClick + " fer par click" + '<br/>' +
+                        "Amélioration : " + ferParClick*2 + " fer par click");
     });
     plancheMarteau.mouseout(function(){
         displayDivInfo();
     });
     plancheForgeron.mouseover(function(){
         var forgeronAmelio = autoForgeron +5;
-        displayDivInfo("Actuellement : " + autoForgeron + " bois pour un click " + '<br/>' +
-                        "Amélioration : " + forgeronAmelio + " bois pour un click");
+        displayDivInfo("Actuellement : " + autoForgeron + " fer par seconde" + '<br/>' +
+                        "Amélioration : " + forgeronAmelio + " fer par seconde");
     });
     plancheForgeron.mouseout(function(){
         displayDivInfo();
