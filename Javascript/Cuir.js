@@ -1,3 +1,4 @@
+var nombreDeCuir = 0;
 $('document').ready(function() {
   
 
@@ -6,7 +7,7 @@ $('document').ready(function() {
 
   var image = document.getElementById("cuir");
   var resultat = document.getElementById("IndicateurCuir");
-  var nombreDeCuir = 0;
+  
   var cuirParClick = 1;
 
 

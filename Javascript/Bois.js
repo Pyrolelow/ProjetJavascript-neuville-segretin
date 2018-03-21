@@ -1,3 +1,4 @@
+var nombreDeBois = 0;
 $('document').ready(function() {
   
 
@@ -6,7 +7,7 @@ $('document').ready(function() {
 
   var image = document.getElementById("bois");
   var resultat = document.getElementById("IndicateurBois");
-  var nombreDeBois = 0;
+  
   var boisParClick = 1;
 
 

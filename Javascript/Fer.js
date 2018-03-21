@@ -1,3 +1,5 @@
+var nombreDeFer = 0;
+
 $('document').ready(function() {
   
 
@@ -6,7 +8,7 @@ $('document').ready(function() {
 
   var image = document.getElementById("lingotFer");
   var resultat = document.getElementById("IndicateurFer");
-  var nombreDeFer = 0;
+  
   var ferParClick = 1;
 
 
