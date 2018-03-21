@@ -97,6 +97,16 @@ body{
     background-size: 100% 100%;
 }
 
+#craftInterface{
+    text-align: center;
+    margin: 0px;
+    padding: 25px;
+    width: 300px;
+    background: url(../images/mine.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
 #planche{
     padding: 10px;
     height: 230px;
