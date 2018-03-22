@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	var epeeBois = $("#epeeEnBois");
+	var epeeBois = $("#epeeBois");
 	var epeeBoisPrix = [1,1,0];
 	var armeEquipement = $(".epee");
 
