@@ -101,6 +101,7 @@ body{
     margin: 0px;
     padding: 0px;
     width: 600px;
+    height: 820px;
     background: url(../images/onglet.jpg);
     background-repeat:no-repeat;
     background-size: 100% 100%;
@@ -113,18 +114,18 @@ body{
     padding-top: 25px;
     padding-left: 25px;
     width: 545px;
-    height: 350px;
+    height: 358px;
 }
 
 #craftInterface{
     text-align: center;
     overflow: scroll;
     margin: 0px;
-    margin-left: 5px;
+    margin-left: 17px;
     padding-top: 25px;
     padding-left: 25px;
-    width: 545px;
-    height: 350px;
+    width: 539px;
+    height: 365px;
 }
 
 #craftInterface p img{
