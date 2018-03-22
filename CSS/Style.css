@@ -101,11 +101,6 @@ body{
     background-size: 100% 100%;
 }
 
-#craftInterface p img{
-    width: 70px;
-    height: 70px;
-}
-
 #blocPersoCraft{
     justify-content: center;
     margin: 0px;
@@ -127,11 +122,17 @@ body{
 
 #craftInterface{
     text-align: center;
+    overflow: scroll;
     margin: 0px;
     padding-top: 25px;
     padding-left: 25px;
     width: 545px;
     height: 350px;
+}
+
+#craftInterface p img{
+    width: 70px;
+    height: 70px;
 }
 
 .epee{
