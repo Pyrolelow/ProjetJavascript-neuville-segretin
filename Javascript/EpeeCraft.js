@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	var epeeBois = $("#epeeEnBois");
-	var epeeBoisPrix = [50,20,0];
+	var epeeBoisPrix = [1,1,0];
 	var armeEquipement = $(".epee");
 
 	epeeBois.click(function(){
