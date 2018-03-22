@@ -14,7 +14,6 @@
 }
 
 #hache{
-    padding-left: 5px;
     width: 80px;
     height: 80px;
 }
@@ -40,6 +39,11 @@
 }
 
 #forgeron{
+    width: 80px;
+    height: 80px;
+}
+
+#epeeEnBois{
     width: 80px;
     height: 80px;
 }
@@ -97,14 +101,88 @@ body{
     background-size: 100% 100%;
 }
 
+#craftInterface p img{
+    width: 70px;
+    height: 70px;
+}
+
+#blocPersoCraft{
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    width: 600px;
+    background: url(../images/onglet.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+#personnageInterface{
+    text-align: center;
+    margin: 0px;
+    padding: 25px;
+    width: 545px;
+    height: 350px;
+}
+
 #craftInterface{
     text-align: center;
     margin: 0px;
     padding: 25px;
-    width: 300px;
-    background: url(../images/mine.jpg);
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
+    width: 545px;
+    height: 350px;
+}
+
+#personnage{
+    width: 95px;
+    height: 225px;
+}
+
+.epee{
+    top: 115px;
+    left: 75px;
+    position: relative;
+    width: 90px;
+    height: 70px;
+}
+
+.bouclier{
+    top: 225px;
+    left: -20px;
+    position: relative;
+    width: 90px;
+    height: 70px;
+}
+
+.casque{
+    top: 10px;
+    left: 0px;
+    position: relative;
+    width: 90px;
+    height: 70px;
+}
+
+.haut{
+    top: 115px;
+    left: 25px;
+    position: relative;
+    width: 90px;
+    height: 70px;
+}
+
+.bas{
+    top: 225px;
+    left: -70px;
+    position: relative;
+    width: 90px;
+    height: 70px;
+}
+
+.botte{
+    top: 250px;
+    left: 0px;
+    position: relative;
+    width: 90px;
+    height: 70px;
 }
 
 .planche{
@@ -115,9 +193,4 @@ body{
     background: url(../images/planche.png);
     background-repeat:no-repeat;
     background-size: 100% 100%;
-}
-
-#epeeEnBois{
-    width: 200px;
-    height: 200px;
 }
