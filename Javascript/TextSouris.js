@@ -11,7 +11,7 @@ function displayDivInfo(text){
             y = (!is_ie ? e.pageY-window.pageYOffset : event.y+document.body.scrollTop);
             divInfo.style.left = x+15+'px';
             divInfo.style.top = y+15+'px';
-            divInfo.style.backgroundImage="url('./images/test.png')";
+            divInfo.style.backgroundImage="url('./images/cadreEnBois.png')";
             divInfo.style.backgroundSize='100% 100%';
             divInfo.style.padding='15px';
             divInfo.style.color = 'white';
@@ -25,7 +25,6 @@ function displayDivInfo(text){
         document.body.removeChild(document.getElementById('divInfo'));
     }
 }
-
 
 
 $('document').ready(function() {

@@ -1,16 +1,40 @@
+#lingotFerContainer{
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 203px;
+}
+
+#boisContainer{
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 203px;
+}
+
+#cuirContainer{
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 203px;
+}
+
 #lingotFer{
-    width: 200px;
-    height: 200px;
+    margin-top: 50px;
+    width: 180px;
+    height: 118px;
 }
 
 #bois{
-    width: 200px;
-    height: 200px;
+    margin-top: 50px;
+    width: 170px;
+    height: 130px;
 }
 
 #cuir{
-    width: 200px;
-    height: 200px;
+    margin-top: 38px;
+    width: 130px;
+    height: 135px;
 }
 
 #hache{
@@ -130,24 +154,8 @@ body{
     height: 365px;
 }
 
-::-webkit-scrollbar {
-    width: 20px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #271a0c; 
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 5px black; 
-    background: url(../images/scrollbare.png); 
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
-    border-radius: 10px;
-}
-
 #craftInterface p img{
+    margin-top: 0px;
     width: 70px;
     height: 70px;
 }
@@ -205,4 +213,21 @@ body{
     background: url(../images/planche.png);
     background-repeat:no-repeat;
     background-size: 100% 100%;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #271a0c; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 5px black; 
+    background: url(../images/scrollbare.png); 
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
 }

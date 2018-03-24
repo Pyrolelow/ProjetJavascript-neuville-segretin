@@ -7,6 +7,7 @@ $('document').ready(function() {
 
   baseInterval = 1000;
   let titre = $("title");
+  var zoom = 0;
 
   var image = document.getElementById("lingotFer");
   var resultat = document.getElementById("IndicateurFer");
@@ -89,6 +90,15 @@ $('document').ready(function() {
   image.addEventListener("click", function () {
       nombreDeFer += ferParClick;
       afficherScore();
+      if(zoom === 0){
+        image.style.width="187px";
+        image.style.height="125px";
+        zoom = 1;
+      }else{
+        image.style.width="180px";
+        image.style.height="118px";
+        zoom = 0;
+      }
   });
 
 

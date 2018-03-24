@@ -1,17 +1,17 @@
 var nombreDeCuir = 0;
 var cuirParClick = 1;
 var autoTanneur = 0;
+
 $('document').ready(function() {
   
 
   baseInterval = 1000;
+  var zoom = 0;
 
 
   var image = document.getElementById("cuir");
   var resultat = document.getElementById("IndicateurCuir");
   
-  
-
 
   let couteau = $("#clickCouteau");
   var nbCouteau = 0;
@@ -88,6 +88,15 @@ $('document').ready(function() {
   image.addEventListener("click", function () {
       nombreDeCuir += cuirParClick;
       afficherScore();
+      if(zoom === 0){
+        image.style.width="137px";
+        image.style.height="142px";
+        zoom = 1;
+      }else{
+        image.style.width="130px";
+        image.style.height="135px";
+        zoom = 0;
+      }
   });
 
 

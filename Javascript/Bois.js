@@ -6,6 +6,7 @@ $('document').ready(function() {
   
 
   baseInterval = 1000;
+  var zoom = 0;
   
 
   var image = document.getElementById("bois");
@@ -88,6 +89,15 @@ $('document').ready(function() {
   image.addEventListener("click", function () {
       nombreDeBois += boisParClick;
       afficherScore();
+      if(zoom === 0){
+        image.style.width="177px";
+        image.style.height="137px";
+        zoom = 1;
+      }else{
+        image.style.width="170px";
+        image.style.height="130px";
+        zoom = 0;
+      }
   });
 
 
