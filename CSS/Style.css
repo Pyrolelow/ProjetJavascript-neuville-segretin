@@ -154,7 +154,7 @@ body{
     height: 365px;
 }
 
-#craftInterface p img{
+#craftInterface img{
     margin-top: 0px;
     width: 70px;
     height: 70px;
@@ -164,12 +164,11 @@ body{
     height: 155px;
 }
 
-
 .epee{
     top: 115px;
-    left: 75px;
+    left: 82px;
     position: relative;
-    width: 90px;
+    width: 97px;
     height: 70px;
 }
 
@@ -177,7 +176,7 @@ body{
     top: 230px;
     left: -20px;
     position: relative;
-    width: 90px;
+    width: 97px;
     height: 70px;
 }
 
@@ -185,7 +184,7 @@ body{
     top: 10px;
     left: 0px;
     position: relative;
-    width: 90px;
+    width: 97px;
     height: 70px;
 }
 
@@ -193,15 +192,15 @@ body{
     top: 115px;
     left: 25px;
     position: relative;
-    width: 90px;
+    width: 97px;
     height: 70px;
 }
 
 .botte{
     top: 230px;
-    left: -70px;
+    left: -77px;
     position: relative;
-    width: 90px;
+    width: 97px;
     height: 70px;
 }
 

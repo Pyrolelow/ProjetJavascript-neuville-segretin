@@ -1,23 +1,18 @@
 $('document').ready(function() {
 
 	var epeeBois = $("#epeeBois");
-	var epeeBoisPrix = [1,1,0];
-	var niveauEpeeBois = 0;
+	var epeeBoisPrix = [50,20,0];
+	var niveauEpeeBois = 1;
 	var armeEquipement = $(".epee");
 
 	var prixBoisEpeeBois = $("#prixBoisEpeeBois");
 	var prixCuirEpeeBois = $("#prixCuirEpeeBois");
 	var prixFerEpeeBois = $("#prixFerEpeeBois");
 	var epeeBoisText = $('#epeeBoisText');
+	var niveauEpee = $('#niveauEpeeBois');
 
-	document.onload = function () { 
-    	afficherPrixEpeeBois();
-  	}
-
-  	function afficherPrixEpeeBois () {
-  		afficherPrixBoisEpeeBois();
-  		afficherPrixCuirEpeeBois();
-  		afficherPrixFerEpeeBois();
+  	function afficherNiveauEpeeBois(){
+  		niveauEpee.text(niveauEpeeBois);
   	}
 
   	function afficherPrixBoisEpeeBois () {
@@ -33,29 +28,38 @@ $('document').ready(function() {
  	}
 
  	function setPrixEpeeBois() {
-		/*epeeBoisPrix[0] += 1;
-		epeeBoisPrix[1] += 1;
-		epeeBoisPrix[2] += 1;*/
+		epeeBoisPrix[0] += 50;
+		epeeBoisPrix[1] += 25;
+		epeeBoisPrix[2] += 5;
 
-		niveauEpeeBois++;
 		afficherPrixBoisEpeeBois();
 	    afficherPrixCuirEpeeBois();
 	    afficherPrixFerEpeeBois();
-	    console.log(niveauEpeeBois);
+
+		niveauEpeeBois++;
+
+	    if(niveauEpeeBois===11){
+	    	epeeBoisText.replaceWith('<p><img id="epeeBois" src="images/epee_en_bois.png"/> Niveau maximal de l\'arme atteint !</p>');
+	    	niveauEpeeBois=10;
+	    }
+
+	    afficherNiveauEpeeBois();
  	}
 
 	epeeBois.click(function(){
-		if (epeeBoisPrix[0] <= nombreDeBois && epeeBoisPrix[1] <= nombreDeCuir 
-			&& epeeBoisPrix[2] <= nombreDeFer){
-			let audio = new Audio("Sons/sonEnclume.mp3");
-	    	audio.play();
-			armeEquipement.attr('src', "images/epeeboisactive.png");
-			nombreDeBois = nombreDeBois - epeeBoisPrix[0];
-			nombreDeCuir = nombreDeCuir - epeeBoisPrix[1];
-			nombreDeBois = nombreDeBois - epeeBoisPrix[2];
-			setPrixEpeeBois();
-		}else{
-			alert("Il vous faut plus de ressources pour fabriquer votre épée en bois.");
+		if(niveauEpeeBois <=10){
+			if (epeeBoisPrix[0] <= nombreDeBois && epeeBoisPrix[1] <= nombreDeCuir 
+				&& epeeBoisPrix[2] <= nombreDeFer){
+				let audio = new Audio("Sons/sonEnclume.mp3");
+		    	audio.play();
+				armeEquipement.attr('src', "images/epeeboisactive.png");
+				nombreDeBois = nombreDeBois - epeeBoisPrix[0];
+				nombreDeCuir = nombreDeCuir - epeeBoisPrix[1];
+				nombreDeFer = nombreDeFer - epeeBoisPrix[2];
+				setPrixEpeeBois();
+			}else{
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
+			}
 		}
 	});
 
