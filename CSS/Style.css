@@ -5,6 +5,10 @@
     height: 203px;
 }
 
+img.jeux{
+    display: none;
+}
+
 #boisContainer{
     margin: 0px;
     padding: 0px;
@@ -67,7 +71,7 @@
     height: 80px;
 }
 
-body{
+#fond{
     display: flex;
     flex-direction: column;
     align-items: center;

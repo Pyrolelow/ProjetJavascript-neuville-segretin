@@ -7,11 +7,11 @@
 //Equipement supérieur se débloque après avoir fini l'équipement inférieur
 
 
-class Personnage{   
+class Personnage{  
     constructor(){
         this.level = 1;
         this.hp = 100;
-        this.dommage = 0;
+        this.dommage = 5;
         this.armure = 0;
         this.experienceActuel = 0;
         this.experiencePourUp = 100;
@@ -37,12 +37,14 @@ class Personnage{
         return this.experiencePourUp;
     }
 
-    level() {
+    set level() {
         this.level++;
     } 
 
-    set hp(hp){
-        this.hp = hp;
+    set hp(dmg){
+        dmgTaken = dmg - this.armure; 
+        if (dmgTaken > 0)
+        this.hp = this.hp - dmgTaken;
     }
 
     set dommage(dmg){
