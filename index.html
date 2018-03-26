@@ -10,6 +10,9 @@
     <script type="text/javascript" src="Javascript/Fer.js" ></script>
     <script type="text/javascript" src="Javascript/EpeeCraft.js" ></script>
     <script type="text/javascript" src="Javascript/BouclierCraft.js" ></script>
+    <script type="text/javascript" src="Javascript/CasqueCraft.js" ></script>
+    <script type="text/javascript" src="Javascript/HautCraft.js" ></script>
+    <script type="text/javascript" src="Javascript/botteCraft.js" ></script>
     <script type="text/javascript" src="Javascript/Personnage.js" ></script>
     <script type="text/javascript" src="Javascript/TextSouris.js" ></script>
 </head>
@@ -80,103 +83,103 @@
             <div id="craftInterface">
                 <div class="planche">
                     <h3>Épée en bois niveau <span id="niveauEpeeBois">1</span> :</h3>
-                    <p id="epeeBoisText"><img id="epeeBois" src="images/epee_en_bois.png"/>Il vous faut : <span id="prixBoisEpeeBois">50</span><img id="bois" src="images/bois.png"/><span id="prixCuirEpeeBois">20</span><img id="cuir" src="images/cuir.png"/><span id="prixFerEpeeBois">0</span><img id="lingotFer" src="images/fer.png"/></p>
+                    <p id="epeeBoisText"><img id="epeeBois" class="itemImage" src="images/epee_en_bois.png"/>Il vous faut : <span id="prixBoisEpeeBois">50</span><img id="bois" src="images/bois.png"/><span id="prixCuirEpeeBois">20</span><img id="cuir" src="images/cuir.png"/><span id="prixFerEpeeBois">0</span><img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Bouclier en bois <span id="niveauBouclierbois">1</span> :</h3>
-                    <p id="bouclierBoisText"><img id="bouclierBois" src="images/bouclier_en_bois.png"/>Il vous faut : <span id="prixBoisBouclierBois">100</span><img id="bois" src="images/bois.png"/><span id="prixCuirBouclierBois">50</span><img id="cuir" src="images/cuir.png"/><span id="prixFerBouclierBois">20</span><img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Bouclier en bois niveau <span id="niveauBouclierBois">1</span> :</h3>
+                    <p id="bouclierBoisText"><img id="bouclierBois" class="itemImage" src="images/bouclier_en_bois.png"/>Il vous faut : <span id="prixBoisBouclierBois">100</span><img id="bois" src="images/bois.png"/><span id="prixCuirBouclierBois">50</span><img id="cuir" src="images/cuir.png"/><span id="prixFerBouclierBois">0</span><img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Casque en bois :</h3>
-                    <p><img id="casqueBois" src="images/casque_en_bois.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Casque en bois niveau <span id="niveauCasqueBois">1</span> :</h3>
+                    <p id="casqueBoisText"><img id="casqueBois" class="itemImage" src="images/casque_en_bois.png"/>Il vous faut : <span id="prixBoisCasqueBois">80</span><img id="bois" src="images/bois.png"/><span id="prixCuirCasqueBois">30</span><img id="cuir" src="images/cuir.png"/><span id="prixFerCasqueBois">0</span><img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Armure en bois :</h3>
-                    <p><img id="hautBois" src="images/haut_en_bois.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Armure en bois niveau <span id="niveauHautBois">1</span> :</h3>
+                    <p id="hautBoisText"><img id="hautBois" class="itemImage" src="images/haut_en_bois.png"/>Il vous faut : <span id="prixBoisHautBois">250</span><img id="bois" src="images/bois.png"/><span id="prixCuirHautBois">100</span><img id="cuir" src="images/cuir.png"/><span id="prixFerHautBois">0</span><img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Bottes en tissu :</h3>
-                    <p><img id="botteBois" src="images/botte_en_bois.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Bottes en tissu niveau <span id="niveauBotteBois">1</span> :</h3>
+                    <p id="botteBoisText"><img id="botteBois" class="itemImage" src="images/botte_en_bois.png"/>Il vous faut : <span id="prixBoisBotteBois">30</span><img id="bois" src="images/bois.png"/><span id="prixCuirBotteBois">20</span><img id="cuir" src="images/cuir.png"/><span id="prixFerBotteBois">0</span><img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Épée en cuivre :</h3>
-                    <p><img id="epeeCuir" src="images/epee_en_cuir.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Épée en cuivre niveau <span id="niveauEpeeCuir">1</span> :</h3>
+                    <p id="epeeCuirText"><img id="epeeCuir" class="itemImage" src="images/epee_en_cuir.png"/>Il vous faut : <span id="prixBoisEpeeBois">200</span><img id="bois" src="images/bois.png"/><span id="prixCuirEpeeBois">500</span><img id="cuir" src="images/cuir.png"/><span id="prixFerEpeeCuir">100</span><img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Bouclier en cuir :</h3>
-                    <p><img id="bouclierCuir" src="images/bouclier_en_cuir.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Bouclier en cuir niveau <span id="niveauBouclierCuir">1</span> :</h3>
+                    <p id="bouclierCuirText"><img id="bouclierCuir" class="itemImage" src="images/bouclier_en_cuir.png"/>Il vous faut : <span id="prixBoisBouclierCuir">1000</span><img id="bois" src="images/bois.png"/><span id="prixCuirBouclierCuir">2000</span><img id="cuir" src="images/cuir.png"/><span id="prixFerBouclierCuir">500</span><img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Casque en cuir :</h3>
-                    <p><img id="casqueCuir" src="images/casque_en_cuir.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Casque en cuir niveau <span id="niveauCasqueCuir">1</span> :</h3>
+                    <p id="casqueCuirText"><img id="casqueCuir" class="itemImage" src="images/casque_en_cuir.png"/>Il vous faut : <span id="prixBoisCasqueCuir">1500</span><img id="bois" src="images/bois.png"/><span id="prixCuirCasqueCuir">2500</span><img id="cuir" src="images/cuir.png"/><span id="prixFerCasqueCuir">200</span><img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Armure en cuir :</h3>
-                    <p><img id="hautCuir" src="images/haut_en_cuir.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Armure en cuir niveau <span id="niveauHautCuir">1</span> :</h3>
+                    <p id="hautCuirText"><img id="hautCuir" class="itemImage" src="images/haut_en_cuir.png"/>Il vous faut : <span id="prixBoisHautCuir">2000</span><img id="bois" src="images/bois.png"/><span id="prixCuirHautCuir">3000</span><img id="cuir" src="images/cuir.png"/><span id="prixFerHautCuir">500</span><img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Bottes en cuir :</h3>
-                    <p><img id="botteCuir" src="images/botte_en_cuir.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Bottes en cuir niveau <span id="niveauBotteCuir">1</span> :</h3>
+                    <p id="botteCuirText"><img id="botteCuir" class="itemImage" src="images/botte_en_cuir.png"/>Il vous faut : <span id="prixBoisBotteCuir">300</span><img id="bois" src="images/bois.png"/><span id="prixCuirBotteCuir">1000</span><img id="cuir" src="images/cuir.png"/><span id="prixFerBotteCuir">200</span><img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Épée en fer :</h3>
-                    <p><img id="epeeFer1" src="images/epee_en_fer1.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Épée en fer niveau :</h3>
+                    <p><img id="epeeFer1" class="itemImage" src="images/epee_en_fer1.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Bouclier en fer :</h3>
-                    <p><img id="bouclierFer1" src="images/bouclier_en_fer1.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Bouclier en fer niveau :</h3>
+                    <p><img id="bouclierFer1" class="itemImage" src="images/bouclier_en_fer1.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Casque en fer :</h3>
-                    <p><img id="casqueFer1" src="images/casque_en_fer1.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Casque en fer niveau :</h3>
+                    <p><img id="casqueFer1" class="itemImage" src="images/casque_en_fer1.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Armure en fer :</h3>
-                    <p><img id="hautFer1" src="images/haut_en_fer1.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Armure en fer niveau :</h3>
+                    <p><img id="hautFer1" class="itemImage" src="images/haut_en_fer1.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Bottes en fer :</h3>
-                    <p><img id="botteFer1" src="images/botte_en_fer1.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Bottes en fer niveau :</h3>
+                    <p><img id="botteFer1" class="itemImage" src="images/botte_en_fer1.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Épée en fer renforcé :</h3>
-                    <p><img id="epeeFer2" src="images/epee_en_fer2.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Épée en fer renforcé niveau :</h3>
+                    <p><img id="epeeFer2" class="itemImage" src="images/epee_en_fer2.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Bouclier en fer renforcé :</h3>
-                    <p><img id="bouclierFer2" src="images/bouclier_en_fer2.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Bouclier en fer renforcé niveau :</h3>
+                    <p><img id="bouclierFer2" class="itemImage" src="images/bouclier_en_fer2.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Casque en fer renforcé :</h3>
-                    <p><img id="casqueFer2" src="images/casque_en_fer2.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Casque en fer renforcé niveau :</h3>
+                    <p><img id="casqueFer2" class="itemImage" src="images/casque_en_fer2.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Armure en fer renforcé :</h3>
-                    <p><img id="hautFer2" src="images/haut_en_fer2.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Armure en fer renforcé niveau :</h3>
+                    <p><img id="hautFer2" class="itemImage" src="images/haut_en_fer2.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Bottes en fer renforcé :</h3>
-                    <p><img id="botteFer2" src="images/botte_en_fer2.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Bottes en fer renforcé niveau :</h3>
+                    <p><img id="botteFer2" class="itemImage" src="images/botte_en_fer2.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Épée en fer forgé :</h3>
-                    <p><img id="epeeFer3" src="images/epee_en_fer3.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Épée en fer forgé niveau :</h3>
+                    <p><img id="epeeFer3" class="itemImage" src="images/epee_en_fer3.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Bouclier en fer forgé  :</h3>
-                    <p><img id="bouclierFer3" src="images/bouclier_en_fer3.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Bouclier en fer forgé  niveau :</h3>
+                    <p><img id="bouclierFer3" class="itemImage" src="images/bouclier_en_fer3.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Casque en fer forgé :</h3>
-                    <p><img id="casqueFer3" src="images/casque_en_fer3.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Casque en fer forgé niveau :</h3>
+                    <p><img id="casqueFer3" class="itemImage" src="images/casque_en_fer3.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Armure en fer forgé :</h3>
-                    <p><img id="hautFer3" src="images/haut_en_fer3.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Armure en fer forgé niveau :</h3>
+                    <p><img id="hautFer3" class="itemImage" src="images/haut_en_fer3.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
                 <div class="planche">
-                    <h3>Bottes en fer forgé :</h3>
-                    <p><img id="botteFer3" src="images/botte_en_fer3.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
+                    <h3>Bottes en fer forgé niveau :</h3>
+                    <p><img id="botteFer3" class="itemImage" src="images/botte_en_fer3.png"/>Il vous faut : 50<img id="bois" src="images/bois.png"/> 20<img id="cuir" src="images/cuir.png"/> 0 <img id="lingotFer" src="images/fer.png"/></p>
                 </div>
             </div> 
         </div>

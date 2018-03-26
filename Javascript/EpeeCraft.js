@@ -39,7 +39,7 @@ $('document').ready(function() {
 		niveauEpeeBois++;
 
 	    if(niveauEpeeBois===11){
-	    	epeeBoisText.replaceWith('<p><img id="epeeBois" src="images/epee_en_bois.png"/> Niveau maximal de l\'arme atteint !</p>');
+	    	epeeBoisText.replaceWith('<p><img id="epeeBois" class="itemImage" src="images/epee_en_bois.png"/> Niveau maximal de l\'arme atteint !</p>');
 	    	niveauEpeeBois=10;
 	    }
 

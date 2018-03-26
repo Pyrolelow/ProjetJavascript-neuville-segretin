@@ -1,7 +1,7 @@
 $('document').ready(function() {
 
 	var bouclierBois = $("#bouclierBois");
-	var bouclierBoisPrix = [100,50,20];
+	var bouclierBoisPrix = [100,50,0];
 	var niveauBouclierBois = 1;
 	var armeEquipement = $(".bouclier");
 
@@ -39,7 +39,7 @@ $('document').ready(function() {
 		niveauBouclierBois++;
 
 	    if(niveauBouclierBois===11){
-	    	bouclierBoisText.replaceWith('<p><img id="bouclierBois" src="images/bouclier_en_bois.png"/> Niveau maximal de l\'arme atteint !</p>');
+	    	bouclierBoisText.replaceWith('<p><img id="bouclierBois" class="itemImage" src="images/bouclier_en_bois.png"/> Niveau maximal de l\'arme atteint !</p>');
 	    	niveauBouclierBois=10;
 	    }
 
