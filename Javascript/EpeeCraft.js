@@ -1,7 +1,7 @@
 $('document').ready(function() {
 
 	var epeeBois = $("#epeeBois");
-	var epeeBoisPrix = [50,20,0];
+	var epeeBoisPrix = [5,2,0];
 	var niveauEpeeBois = 1;
 	var armeEquipement = $(".epee");
 
@@ -14,6 +14,8 @@ $('document').ready(function() {
   	function afficherNiveauEpeeBois(){
   		niveauEpee.text(niveauEpeeBois);
   	}
+
+	
 
   	function afficherPrixBoisEpeeBois () {
     	prixBoisEpeeBois.text(epeeBoisPrix[0]);
@@ -28,9 +30,9 @@ $('document').ready(function() {
  	}
 
  	function setPrixEpeeBois() {
-		epeeBoisPrix[0] += 50;
-		epeeBoisPrix[1] += 25;
-		epeeBoisPrix[2] += 5;
+		epeeBoisPrix[0] = 50*niveauEpee;
+		epeeBoisPrix[1] = 25*niveauEpee;
+		epeeBoisPrix[2] = 5*niveauEpee;
 
 		afficherPrixBoisEpeeBois();
 	    afficherPrixCuirEpeeBois();
@@ -38,7 +40,7 @@ $('document').ready(function() {
 
 		niveauEpeeBois++;
 
-	    if(niveauEpeeBois===11){
+	    if(niveauEpeeBois===10){
 	    	epeeBoisText.replaceWith('<p><img id="epeeBois" class="itemImage" src="images/epee_en_bois.png"/> Niveau maximal de l\'arme atteint !</p>');
 	    	niveauEpeeBois=10;
 	    }
@@ -47,7 +49,7 @@ $('document').ready(function() {
  	}
 
 	epeeBois.click(function(){
-		if(niveauEpeeBois <=10){
+		if(niveauEpeeBois <10){
 			if (epeeBoisPrix[0] <= nombreDeBois && epeeBoisPrix[1] <= nombreDeCuir 
 				&& epeeBoisPrix[2] <= nombreDeFer){
 				let audio = new Audio("Sons/sonEnclume.mp3");
@@ -57,6 +59,10 @@ $('document').ready(function() {
 				nombreDeCuir = nombreDeCuir - epeeBoisPrix[1];
 				nombreDeFer = nombreDeFer - epeeBoisPrix[2];
 				setPrixEpeeBois();
+				hero.dommage = hero.dommage + 1;
+				console.log(hero.dommage);
+				localStorage.setItem("dommage",hero.dommage);
+				console.log(localStorage.length);
 			}else{
 				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}

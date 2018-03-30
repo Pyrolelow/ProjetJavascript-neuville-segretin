@@ -33,6 +33,10 @@ $('body').ready(function(){
         ctx.drawImage(ennemi,744.5,260)
 
         ctx.drawImage(personnage,85,260,200,250)
+
+        window.setInterval( function() {
+            combat();
+        },1000);
     }
     
     

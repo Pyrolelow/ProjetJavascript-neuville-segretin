@@ -3,7 +3,6 @@ var boisParClick = 1;
 var autoBucheron = 0;
 
 $('document').ready(function() {
-  
 
   baseInterval = 1000;
   var zoom = 0;
@@ -27,6 +26,9 @@ $('document').ready(function() {
   var achatBucheron = document.getElementById('nbBucheron');
   var spanPrixBucheron = $("#prixBucheron");
   
+  $('#modeCombat').click(function(){
+    
+  })
 
   document.onload = function () { 
     afficherScore();

@@ -31,6 +31,8 @@ $('document').ready(function() {
     afficherScore();
   }
 
+  $('#modeCombat').click(function(){
+  })
 
   function afficherScore () {
     resultat.innerHTML = nombreDeCuir;

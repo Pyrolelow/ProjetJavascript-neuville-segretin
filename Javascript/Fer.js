@@ -32,6 +32,9 @@ $('document').ready(function() {
     afficherScore();
   }
 
+  $('#modeCombat').click(function(){
+    localStorage.setItem("fer",nombreDeFer);
+  })
 
   function afficherScore () {
     resultat.innerHTML = nombreDeFer;

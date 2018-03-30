@@ -1,7 +1,7 @@
 $('document').ready(function() {
 
 	var bouclierBois = $("#bouclierBois");
-	var bouclierBoisPrix = [100,50,0];
+	var bouclierBoisPrix = [10,5,0];
 	var niveauBouclierBois = 1;
 	var armeEquipement = $(".bouclier");
 
@@ -57,6 +57,9 @@ $('document').ready(function() {
 				nombreDeCuir = nombreDeCuir - bouclierBoisPrix[1];
 				nombreDeFer = nombreDeFer - bouclierBoisPrix[2];
 				setPrixBouclierBois();
+				hero.armure = hero.armure+1;
+				console.log(hero.armure);
+				localStorage.setItem("armure",hero.armure);
 			}else{
 				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}

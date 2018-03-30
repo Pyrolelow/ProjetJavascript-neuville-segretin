@@ -57,6 +57,9 @@ $('document').ready(function() {
 				nombreDeCuir = nombreDeCuir - botteBoisPrix[1];
 				nombreDeFer = nombreDeFer - botteBoisPrix[2];
 				setPrixBotteBois();
+				hero.armure = hero.armure+1;
+				console.log(hero.armure);
+				localStorage.setItem("armure",hero.armure);
 			}else{
 				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}

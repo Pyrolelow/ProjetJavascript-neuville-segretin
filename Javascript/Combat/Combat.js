@@ -1,12 +1,15 @@
+var combat;
+var hero;
+
 $('document').ready(function(){
     
-    var hero = new Personnage();
+    hero = new Personnage();
     var monstre = new Monstre();
     var vieRestanteMonstre;
     var vieRestanteHero;
 
-    var combat = function(){
-
+    combat = function(){
+    console.log(hero.dommage);
     if(hero.hp > 0){
         vieRestanteMonstre = monstre.hp - hero.dommage;
         console.log("Vie du monstre :" + vieRestanteMonstre);
@@ -41,9 +44,7 @@ $('document').ready(function(){
 
     }
 
-    window.setInterval( function() {
-    combat();
-    },1000);
+    
 
 
 })
