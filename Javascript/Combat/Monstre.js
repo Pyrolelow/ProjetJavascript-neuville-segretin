@@ -6,22 +6,26 @@ class Monstre{
     }
 
     get dmg(){
-        return this.dmg;
+        return this._dmg;
     }
 
     get hp(){
-        return this.hp;
+        return this._hp;
     }
 
     get experience(){
-        return this.experience;
+        return this._experience;
     }
 
     set dmg(dmg){
-        this.dmg = dmg;
+        this._dmg = dmg;
     }
 
     set hp(hp){
-        this.hp = hp;
+        this._hp = hp;
+    }
+
+    set experience(exp){
+        this._experience = exp;
     }
 }

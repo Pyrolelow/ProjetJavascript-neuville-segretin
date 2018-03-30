@@ -11,52 +11,50 @@ class Personnage{
     constructor(){
         this.level = 1;
         this.hp = 100;
-        this.dommage = 5;
+        this.dommage = 3;
         this.armure = 0;
         this.experienceActuel = 0;
         this.experiencePourUp = 100;
     }
 
     get level(){
-        return this.level;
+        return this._level;
     }
 
     get hp(){
-        return this.hp;
+        return this._hp;
     }
 
     get dommage(){
-        return this.dommage;
+        return this._dommage;
     }
 
     get experienceActuel(){
-        return this.experienceActuel;
+        return this._experienceActuel;
     }
 
     get experiencePourUp(){
-        return this.experiencePourUp;
+        return this._experiencePourUp;
     }
 
-    set level(lvl) {
-        if (lvl){
-            this.level = lvl;
-        }
-        return;
-        
-    } 
+    set level(Level) {
+            this._level = Level;       
+    }
 
-    set hp(dmg){
-        dmgTaken = dmg - this.armure; 
-        if (dmgTaken > 0)
-        this.hp = this.hp - dmgTaken;
+    set hp(hp){
+        this._hp = hp;
     }
 
     set dommage(dmg){
-        this.dommage = dmg;
+        this._dommage = dmg;
     }
 
     set experienceActuel(exp){
-        this.experienceActuel = exp;
+        this._experienceActuel = exp;
+    }
+
+    set experiencePourUp(exp){
+        this._experiencePourUp = exp;
     }
 
 }
