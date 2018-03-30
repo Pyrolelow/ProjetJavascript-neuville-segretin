@@ -37,8 +37,12 @@ class Personnage{
         return this.experiencePourUp;
     }
 
-    set level() {
-        this.level++;
+    set level(lvl) {
+        if (lvl){
+            this.level = lvl;
+        }
+        return;
+        
     } 
 
     set hp(dmg){

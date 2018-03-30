@@ -1,49 +1,19 @@
-$('document').ready(function() {
+$('document').ready(function(){
+    
+    var hero = new Personnage();
+    var monstre = new Monstre();
+    var dmgPrisMonstre;
+    var dmgPrisHero;
 
-$('body').ready(function(){
-    let ctx = document.getElementById('fight').getContext('2d');
-    let combatBackground = document.getElementById('background');
-    let ennemi = document.getElementById('ennemi');
-    let personnage = document.getElementById('personnage');
-
-    combatBackground.onload = function(){
-        
-        ctx.drawImage(combatBackground,0,0,1024,512);
-        
-
-
-        ctx.fillStyle = 'rgb(200, 0, 0)';
-        ctx.fillRect(10, 10, 350, 20);
-
-        ctx.fillStyle = 'rgb(0, 200, 0)';
-        ctx.fillRect(10, 10, 350, 20);
-
-        ctx.fillStyle = 'rgb(200, 0, 0)';
-        ctx.fillRect(664, 10, 350, 20);
-
-        ctx.fillStyle = 'rgb(0, 200, 0)';
-        ctx.fillRect(664, 10, 350, 20);
-
-        ctx.fillStyle = 'black';
-        ctx.strokeRect(664, 10, 350, 20);
-
-        ctx.fillStyle = 'black';
-        ctx.strokeRect(10, 10, 350, 20);
-
-        ctx.drawImage(ennemi,744.5,260)
-
-        ctx.drawImage(personnage,85,260,200,250)
+    var combat = function(){
+        dmgPrisMonstre = monstre.hp - hero.dommage;
+        console.log(dmgPrisMonstre);
+        monstre.hp()
     }
-    
-    
-});
+
+   window.setInterval( function() {
+    combat();
+  },1000);
 
 
-
-
-
-
-
-
-
-});
+})
