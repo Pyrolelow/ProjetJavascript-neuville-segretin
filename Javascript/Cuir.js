@@ -1,6 +1,10 @@
 var nombreDeCuir = 0;
 var cuirParClick = 1;
 var autoTanneur = 0;
+var nbCouteau = 0;
+var prixCouteau = 10;
+var nbTanneur = 0;
+var prixTanneur = 1000;
 
 $('document').ready(function() {
   
@@ -14,15 +18,11 @@ $('document').ready(function() {
   
 
   let couteau = $("#clickCouteau");
-  var nbCouteau = 0;
-  var prixCouteau = 10;
   var achatCouteau = document.getElementById('nbCouteau');
   var spanPrixCouteau = $("#prixCouteau");
 
   
   let tanneur = $("#clickTanneur");
-  var nbTanneur = 0;
-  var prixTanneur = 1000;
   var achatTanneur = document.getElementById('nbTanneur');
   var spanPrixTanneur = $("#prixTanneur");
   
@@ -31,8 +31,6 @@ $('document').ready(function() {
     afficherScore();
   }
 
-  $('#modeCombat').click(function(){
-  })
 
   function afficherScore () {
     resultat.innerHTML = nombreDeCuir;

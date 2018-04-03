@@ -3,6 +3,12 @@ $('document').ready(function(){
         localStorage.setItem("bois",nombreDeBois);
         localStorage.setItem("cuir",nombreDeCuir);
         localStorage.setItem("fer",nombreDeFer);
-        localStorage.setItem("niveauEpeeBois",niv)
+        localStorage.setItem("niveauEpeeBois",niveauEpee);
+        localStorage.setItem("hache",nbHache);
+        localStorage.setItem("bucheron",nbBucheron);
+        localStorage.setItem("couteau",nbCouteau);
+        localStorage.setItem("tanneur",nbTanneur);
+        localStorage.setItem("marteau",nbMarteau);
+        localStorage.setItem("forgeron",nbForgeron);
     })
 })

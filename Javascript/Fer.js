@@ -2,6 +2,12 @@ var nombreDeFer = 0;
 var ferParClick = 1;
 var autoForgeron = 0;
 
+var nbMarteau = 0;
+var prixMarteau = 10;
+
+var nbForgeron = 0;
+var prixForgeron = 1000;
+
 $('document').ready(function() {
   
 
@@ -15,15 +21,11 @@ $('document').ready(function() {
 
 
   let marteau = $("#clickMarteau");
-  var nbMarteau = 0;
-  var prixMarteau = 10;
   var achatMart = document.getElementById('nbMarteau');
   var spanPrixMarteur = $("#prixMarteau");
 
   
   let forgeron = $("#clickForgeron");
-  var nbForgeron = 0;
-  var prixForgeron = 1000;
   var achatForgeron = document.getElementById('nbForgeron');
   var spanPrixForgeron = $("#prixForgeron");
   
@@ -32,9 +34,7 @@ $('document').ready(function() {
     afficherScore();
   }
 
-  $('#modeCombat').click(function(){
-    localStorage.setItem("fer",nombreDeFer);
-  })
+
 
   function afficherScore () {
     resultat.innerHTML = nombreDeFer;

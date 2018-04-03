@@ -1,6 +1,15 @@
 var nombreDeBois = 0;
 var boisParClick = 1;
 var autoBucheron = 0;
+var nbHache = 0;
+var nbBucheron = 0;
+
+var prixHache = 10;
+
+var prixBucheron = 1000;
+
+let afficherScore;
+let afficherPrixHache;
 
 $('document').ready(function() {
 
@@ -13,36 +22,29 @@ $('document').ready(function() {
 
 
   let hache = $("#clickHache");
-  var nbHache = 0;
-  var prixHache = 10;
   var achatHache = document.getElementById('nbHache');
   var spanPrixHache = $("#prixHache");
 
   
   let bucheron = $("#clickBucheron");
-  var nbBucheron = 0;
   
-  var prixBucheron = 1000;
   var achatBucheron = document.getElementById('nbBucheron');
   var spanPrixBucheron = $("#prixBucheron");
   
-  $('#modeCombat').click(function(){
-    
-  })
 
   document.onload = function () { 
     afficherScore();
   }
 
 
-  function afficherScore () {
+  afficherScore = function afficherScore () {
     resultat.innerHTML = nombreDeBois;
     afficherPrixHache();
     afficherPrixBucheron();
   }
 
 
-  function afficherPrixHache (){
+  afficherPrixHache = function afficherPrixHache (){
     spanPrixHache.text(prixHache);
   }
  
