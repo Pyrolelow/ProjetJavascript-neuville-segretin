@@ -4,12 +4,14 @@ $('document').ready(function(){
         localStorage.setItem("cuir",nombreDeCuir);
         localStorage.setItem("fer",nombreDeFer);
         localStorage.setItem("niveauEpee",niveauEpee);
+        localStorage.setItem("niveauBotte",niveauBotte);
         localStorage.setItem("hache",nbHache);
         localStorage.setItem("bucheron",nbBucheron);
         localStorage.setItem("couteau",nbCouteau);
         localStorage.setItem("tanneur",nbTanneur);
         localStorage.setItem("marteau",nbMarteau);
         localStorage.setItem("forgeron",nbForgeron);
-		localStorage.setItem("dommage",hero.dommage);
+        localStorage.setItem("dommage",hero.dommage);        
+		localStorage.setItem("armure",hero.armure);
     })
 })

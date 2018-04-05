@@ -14,7 +14,6 @@ $('document').ready(function() {
 	
 
 	var epee = $("#epee");
-	console.log(epee);
 	var epeeBoisPrix = [5,2,0];
 	var armeEquipement = $(".epee");
 
@@ -43,7 +42,7 @@ $('document').ready(function() {
  	}
 
  	function setPrixEpeeBois(){
-		niveauEpee++;
+		
 		console.log(niveauEpee);
 		if(niveauEpee < 10){
 			epeeBoisPrix[0] = 50*niveauEpee;
@@ -77,16 +76,8 @@ $('document').ready(function() {
 		}else if(niveauEpee >= 30){
 			$('#nomEpee').replaceWith('<h3 id="nomEpee">Épée en fer niveau <span id="niveauEpee">30</span> :</h3>')
 			epeeBoisText.replaceWith('<p id="epeeText"><img class="itemImage" src="images/epee_en_fer1.png"/> Niveau max atteint ! </p>');
+			armeEquipement.attr('src', "images/epeefer1active.png");
 			niveauEpee = 30;
-		}
-		
-
-		
-
-		if(niveauEpee===10){
-			
-		}if(niveauEpee===20){
-			
 		}
 		
 		afficherPrixBoisEpeeBois();
@@ -107,6 +98,7 @@ $('document').ready(function() {
 				nombreDeBois = nombreDeBois - epeeBoisPrix[0];
 				nombreDeCuir = nombreDeCuir - epeeBoisPrix[1];
 				nombreDeFer = nombreDeFer - epeeBoisPrix[2];
+				niveauEpee++;
 				setPrixEpeeBois();
 				hero.dommage = hero.dommage + 1;
 				localStorage.setItem("dommage",hero.dommage);
@@ -119,6 +111,7 @@ $('document').ready(function() {
 					nombreDeBois = nombreDeBois - epeeBoisPrix[0];
 					nombreDeCuir = nombreDeCuir - epeeBoisPrix[1];
 					nombreDeFer = nombreDeFer - epeeBoisPrix[2];
+					niveauEpee++;
 					setPrixEpeeBois();
 					hero.dommage = hero.dommage + 3;
 					}
@@ -130,6 +123,7 @@ $('document').ready(function() {
 					nombreDeBois = nombreDeBois - epeeBoisPrix[0];
 					nombreDeCuir = nombreDeCuir - epeeBoisPrix[1];
 					nombreDeFer = nombreDeFer - epeeBoisPrix[2];
+					niveauEpee++;
 					setPrixEpeeBois();
 					hero.dommage = hero.dommage + 5;
 					}
