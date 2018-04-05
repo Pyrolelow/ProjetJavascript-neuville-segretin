@@ -97,8 +97,6 @@ $('document').ready(function() {
 				niveauBouclier++;
 				setPrixBouclierBois();
 				hero.armure = hero.armure+1;
-				console.log(hero.armure);
-				localStorage.setItem("armure",hero.armure);
 			}else{
 				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}

@@ -6,6 +6,8 @@ $('document').ready(function(){
         localStorage.setItem("niveauEpee",niveauEpee);
         localStorage.setItem("niveauBotte",niveauBotte);
         localStorage.setItem("niveauBouclier",niveauBouclier);
+        localStorage.setItem("niveauCasque",niveauCasque);
+        localStorage.setItem("niveauHaut",niveauHaut);
         localStorage.setItem("hache",nbHache);
         localStorage.setItem("bucheron",nbBucheron);
         localStorage.setItem("couteau",nbCouteau);
