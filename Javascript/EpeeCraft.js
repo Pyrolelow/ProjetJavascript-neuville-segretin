@@ -102,6 +102,8 @@ $('document').ready(function() {
 				setPrixEpeeBois();
 				hero.dommage = hero.dommage + 1;
 				localStorage.setItem("dommage",hero.dommage);
+				}else{
+					alert("Il vous faut plus de ressources pour fabriquer cet item !");
 				}
 			}else if (niveauEpee < 20 && niveauEpee >= 10){
 				if (epeeBoisPrix[0] <= nombreDeBois && epeeBoisPrix[1] <= nombreDeCuir 
@@ -114,6 +116,8 @@ $('document').ready(function() {
 					niveauEpee++;
 					setPrixEpeeBois();
 					hero.dommage = hero.dommage + 3;
+					}else{
+						alert("Il vous faut plus de ressources pour fabriquer cet item !");
 					}
 			}else if(niveauEpee < 30 && niveauEpee >= 20){
 				if (epeeBoisPrix[0] <= nombreDeBois && epeeBoisPrix[1] <= nombreDeCuir 
@@ -126,9 +130,11 @@ $('document').ready(function() {
 					niveauEpee++;
 					setPrixEpeeBois();
 					hero.dommage = hero.dommage + 5;
+					}else{
+						alert("Il vous faut plus de ressources pour fabriquer cet item !");
 					}
 			}else{
-				alert("Il vous faut plus de ressources pour fabriquer cet item !");
+				alert("Vous avez atteint le niveau max pour cet item !");
 			}
 	});
 
