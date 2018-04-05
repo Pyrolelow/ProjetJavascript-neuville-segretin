@@ -11,7 +11,7 @@ var niveauBotteAffiche;
 
 $('document').ready(function() {
 
-	 botte = $("#botteBois");
+	 botte = $("#botte");
 	 bottePrix = [30,20,0];
 	 niveauBotte = 1;
 	 armeEquipement = $(".botte");
