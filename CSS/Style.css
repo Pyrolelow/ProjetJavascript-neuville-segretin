@@ -1,11 +1,12 @@
 @font-face{
-    font-family: PirataOne-Regular;
-    src: url(../CSS/PirataOne-Regular.woff);
+    font-family: EnchantedLand;
+    src: url(../CSS/EnchantedLand.woff);
 }
 
 h3{
     color: #35160C;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
     padding: 0px;
 }
 
@@ -92,8 +93,8 @@ img.jeux{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: PirataOne-Regular;
-    font-size: 18px;
+    font-family: EnchantedLand;
+    font-size: 25px;
     letter-spacing: 1px;
     margin: 0px;
     padding: 0px;
