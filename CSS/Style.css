@@ -16,6 +16,11 @@ p{
     padding: 0px;
 }
 
+a{
+    color: #35160C;
+    text-decoration: none;
+}
+
 #lingotFerContainer{
     margin: 0px;
     padding: 0px;
@@ -240,6 +245,17 @@ img.jeux{
     justify-content: center;
     text-align: center;
     background: url(../images/planche.png);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+#modeCombat{
+    text-align: center;
+    width: 195px;
+    height: 39px;
+    padding-top: 15px;
+    font-style: none;
+    background: url(../images/boutonFightFarm.jpg); 
     background-repeat:no-repeat;
     background-size: 100% 100%;
 }
