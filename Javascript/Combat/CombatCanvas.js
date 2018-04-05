@@ -8,31 +8,31 @@ $('body').ready(function(){
 
     combatBackground.onload = function(){
         
-        ctx.drawImage(combatBackground,0,0,1024,512);
+        ctx.drawImage(combatBackground,0,0,1280,720);
         
 
 
         ctx.fillStyle = 'rgb(200, 0, 0)';
-        ctx.fillRect(10, 10, 350, 20);
+        ctx.fillRect(70, 70, 350, 20);
 
         ctx.fillStyle = 'rgb(0, 200, 0)';
-        ctx.fillRect(10, 10, 350, 20);
+        ctx.fillRect(70, 70, 350, 20);
+
+        ctx.fillStyle = 'black';
+        ctx.strokeRect(70, 70, 350, 20);
 
         ctx.fillStyle = 'rgb(200, 0, 0)';
-        ctx.fillRect(664, 10, 350, 20);
+        ctx.fillRect(850, 70, 350, 20);
 
         ctx.fillStyle = 'rgb(0, 200, 0)';
-        ctx.fillRect(664, 10, 350, 20);
+        ctx.fillRect(850, 70, 350, 20);
 
         ctx.fillStyle = 'black';
-        ctx.strokeRect(664, 10, 350, 20);
+        ctx.strokeRect(850, 70, 350, 20);
 
-        ctx.fillStyle = 'black';
-        ctx.strokeRect(10, 10, 350, 20);
+        ctx.drawImage(ennemi,935,320,220,300)
 
-        ctx.drawImage(ennemi,744.5,260)
-
-        ctx.drawImage(personnage,85,260,200,250)
+        ctx.drawImage(personnage,120,330,200,250)
 
         window.setInterval( function() {
             combat();

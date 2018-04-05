@@ -94,6 +94,11 @@ img.jeux{
     height: 80px;
 }
 
+#ennemi{
+    width: 80px;
+    height: 80px;
+}
+
 #fond{
     display: flex;
     flex-direction: column;
@@ -105,6 +110,21 @@ img.jeux{
     padding: 0px;
     background-color: red;
     background: url(../images/background.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#fondCombat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: EnchantedLand;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+    background: url(../images/backgroundCombat.jpg);
     background-repeat:no-repeat;
     background-size: cover;
 }
@@ -253,6 +273,19 @@ img.jeux{
     text-align: center;
     width: 195px;
     height: 39px;
+    margin-top: 10px;
+    padding-top: 15px;
+    font-style: none;
+    background: url(../images/boutonFightFarm.jpg); 
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+#modeFarm{
+    text-align: center;
+    width: 195px;
+    height: 39px;
+    margin-top: 10px;
     padding-top: 15px;
     font-style: none;
     background: url(../images/boutonFightFarm.jpg); 
