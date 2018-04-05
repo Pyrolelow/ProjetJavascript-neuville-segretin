@@ -1,3 +1,20 @@
+@font-face{
+    font-family: PirataOne-Regular;
+    src: url(../CSS/PirataOne-Regular.woff);
+}
+
+h3{
+    color: #35160C;
+    margin-top: 15px;
+    padding: 0px;
+}
+
+p{
+    color: #171616;
+    margin: 2px;
+    padding: 0px;
+}
+
 #lingotFerContainer{
     margin: 0px;
     padding: 0px;
@@ -75,7 +92,9 @@ img.jeux{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Trebuchet MS, sans-serif;
+    font-family: PirataOne-Regular;
+    font-size: 18px;
+    letter-spacing: 1px;
     margin: 0px;
     padding: 0px;
     background-color: red;
