@@ -5,6 +5,7 @@ $('document').ready(function(){
         localStorage.setItem("fer",nombreDeFer);
         localStorage.setItem("niveauEpee",niveauEpee);
         localStorage.setItem("niveauBotte",niveauBotte);
+        localStorage.setItem("niveauBouclier",niveauBouclier);
         localStorage.setItem("hache",nbHache);
         localStorage.setItem("bucheron",nbBucheron);
         localStorage.setItem("couteau",nbCouteau);

@@ -1,26 +1,18 @@
-var botte ;
 var bottePrix = [];
 var niveauBotte;
-var armeEquipement;
-
-var prixBoisBotte ;
-var prixCuirBotte;
-var prixFerBotte;
-var botteText;
-var niveauBotteAffiche;
 
 $('document').ready(function() {
 
-	 botte = $("#botte");
+	 var botte = $("#botte");
 	 bottePrix = [30,20,0];
 	 niveauBotte = 1;
-	 armeEquipement = $(".botte");
+	 var armeEquipement = $(".botte");
 
-	 prixBoisBotte = $("#prixBoisBotte");
-	 prixCuirBotte = $("#prixCuirBotte");
-	 prixFerBotte = $("#prixFerBotte");
-	 botteText = $('#botteText');
-	 niveauBotteAffiche = $('#niveauBotte');
+	var prixBoisBotte = $("#prixBoisBotte");
+	 var prixCuirBotte = $("#prixCuirBotte");
+	 var prixFerBotte = $("#prixFerBotte");
+	 var botteText = $('#botteText');
+	 var niveauBotteAffiche = $('#niveauBotte');
 
   	function afficherNiveauBotteBois(){
   		niveauBotteAffiche.text(niveauBotte);
@@ -48,14 +40,12 @@ $('document').ready(function() {
 			bottePrix[1] += 20*niveauBotte;
 			bottePrix[2] += 0*niveauBotte;
 			console.log("b : "+bottePrix[0]+" c : "+bottePrix[1]+" f : "+bottePrix[2])
-			armeEquipement.attr('src', "images/botteboisactive.png");
 		}else if(niveauBotte < 20 && niveauBotte >= 10){
 			bottePrix[0] = 300*(niveauBotte-9);
 			bottePrix[1] = 1000*(niveauBotte-9);
 			bottePrix[2] = 200*(niveauBotte-9);
 			$('#nomBotte').replaceWith('<h3 id="nomBotte">Bottes en cuir niveau <span id="niveauBotte">1</span> :</h3>')
 			botteText.replaceWith('<p id="botteText"><img class="itemImage" src="images/botte_en_cuir.png"/>Il vous faut : <span id="prixBoisBotte">200</span><img id="bois" src="images/bois.png"/><span id="prixCuirBotte">500</span><img id="cuir" src="images/cuir.png"/><span id="prixFerBotte">100</span><img id="lingotFer" src="images/fer.png"/></p>');
-			armeEquipement.attr('src', "images/bottecuiractive.png");
 			prixBoisBotte = $("#prixBoisBotte");
 			prixCuirBotte = $("#prixCuirBotte");
 			prixFerBotte = $("#prixFerBotte");
@@ -67,7 +57,6 @@ $('document').ready(function() {
 			bottePrix[2] = 5000*(niveauBotte-19);
 			$('#nomBotte').replaceWith('<h3 id="nomBotte">Bottes en fer niveau <span id="niveauBotte">1</span> :</h3>')
 			botteText.replaceWith('<p id="botteText"><img class="itemImage" src="images/botte_en_fer1.png"/>Il vous faut : <span id="prixBoisBotte">200</span><img id="bois" src="images/bois.png"/><span id="prixCuirBotte">500</span><img id="cuir" src="images/cuir.png"/><span id="prixFerBotte">100</span><img id="lingotFer" src="images/fer.png"/></p>');
-			armeEquipement.attr('src', "images/bottefer1active.png");
 			prixBoisBotte = $("#prixBoisBotte");
 			prixCuirBotte = $("#prixCuirBotte");
 			prixFerBotte = $("#prixFerBotte");
@@ -78,6 +67,14 @@ $('document').ready(function() {
 			botteText.replaceWith('<p id="botteText"><img class="itemImage" src="images/botte_en_fer1.png"/> Niveau max atteint ! </p>');
 			armeEquipement.attr('src', "images/bottefer1active.png");
 			niveauBotte = 30;
+		}
+
+		if(niveauBotte < 10 && niveauBotte > 1){			
+			armeEquipement.attr('src', "images/botteboisactive.png");
+		}if(niveauBotte < 20 && niveauBotte > 10){
+			armeEquipement.attr('src', "images/bottecuiractive.png");						
+		}else if(niveauBotte < 30 && niveauBotte > 20){			
+			armeEquipement.attr('src', "images/bottefer1active.png");	
 		}
 
 		afficherPrixBoisBotteBois();
