@@ -43,6 +43,10 @@ $('body').ready(function(){
             ctx.fillStyle = 'rgb(0, 200, 0)';
             ctx.fillRect(70, 70, 0, 20);
         }
+
+        let level = document.getElementById('niv1'); //A la place du 1 tu met hero.level faut rajouter des les niveaux dans combat html avec la class jeux
+
+        ctx.drawImage(level,450,50,50,50)
            
         //vie Personnage
         
