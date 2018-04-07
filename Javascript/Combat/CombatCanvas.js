@@ -13,9 +13,9 @@ $('body').ready(function(){
         ctx.clearRect(0, 0, 1280, 720);
 
         ctx.drawImage(combatBackground,0,0,1280,720);
-        ctx.drawImage(ennemi,935,320,220,300)
+        ctx.drawImage(ennemi,840,240,120,218)
 
-        ctx.drawImage(personnage,120,330,200,250)
+        ctx.drawImage(personnage,180,380,209,250)
 
         ctx.fillStyle = 'rgb(200, 0, 0)';
         ctx.fillRect(70, 70, 350, 20);
