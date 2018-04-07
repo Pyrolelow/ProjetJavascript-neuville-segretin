@@ -21,6 +21,13 @@ $('document').ready(function(){
         nombreDeFer = parseInt(localStorage.getItem("fer"));
     }
 
+    if(localStorage.getItem("niveauPersonnage")){
+        hero.level = parseInt(localStorage.getItem("niveauPersonnage"));
+        $('#levelPerso').text(hero.level);
+    }else{
+        $('#levelPerso').text("1");
+    }
+
     if(localStorage.getItem("hache")){
         nbHache = parseInt(localStorage.getItem("hache"));
         document.getElementById('nbHache').innerHTML = nbHache;
