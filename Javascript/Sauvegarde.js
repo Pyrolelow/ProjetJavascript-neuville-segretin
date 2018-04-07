@@ -15,6 +15,10 @@ $('document').ready(function(){
         localStorage.setItem("marteau",nbMarteau);
         localStorage.setItem("forgeron",nbForgeron);
         localStorage.setItem("dommage",hero.dommage);        
-		localStorage.setItem("armure",hero.armure);
+        localStorage.setItem("armure",hero.armure);
+    })
+    $('#modeFarm').click(function(){
+        localStorage.setItem("niveauPersonnage",hero.level);
+        localStorage.setItem("expAc",hero.experienceActuel);
     })
 })

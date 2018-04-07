@@ -9,6 +9,15 @@ $('document').ready(function(){
     var vieRestanteMonstre;
     var vieRestanteHero;
 
+    if(localStorage.getItem('niveauPersonnage')){
+        hero.level = parseInt(localStorage.getItem('niveauPersonnage'));
+        monstre.hp = 100*hero.level;
+        hero.hp = 100*hero.level;
+        monstre.dmg = 3*hero.level;
+        if(localStorage.getItem("expAc"))
+        hero.experienceActuel = parseInt(localStorage.getItem("expAc"));
+    }
+
     combat = function(){
     if(hero.hp > 0 && monstre.hp > 0){
         
