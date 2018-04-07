@@ -46,7 +46,7 @@ $('document').ready(function() {
 			epeeBoisPrix[0] = 200*(niveauEpee-9);
 			epeeBoisPrix[1] = 500*(niveauEpee-9);
 			epeeBoisPrix[2] = 100*(niveauEpee-9);
-			$('#nomEpee').replaceWith('<h3 id="nomEpee">Épée en cuir niveau <span id="niveauEpee">1</span> :</h3>')
+			$('#nomEpee').replaceWith('<h3 id="nomEpee">Épée en cuivre niveau <span id="niveauEpee">1</span> :</h3>')
 			epeeBoisText.replaceWith('<p id="epeeText"><img class="itemImage" src="images/epee_en_cuir.png"/>Il vous faut : <span id="prixBoisEpee">200</span><img id="bois" src="images/bois.png"/><span id="prixCuirEpee">500</span><img id="cuir" src="images/cuir.png"/><span id="prixFerEpee">100</span><img id="lingotFer" src="images/fer.png"/></p>');
 			prixBoisEpeeBois = $("#prixBoisEpee");
 			prixCuirEpeeBois = $("#prixCuirEpee");

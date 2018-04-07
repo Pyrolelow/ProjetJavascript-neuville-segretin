@@ -5,6 +5,8 @@ $('body').ready(function(){
     let combatBackground = document.getElementById('background');
     let ennemi = document.getElementById('ennemi');
     let personnage = document.getElementById('personnage');
+    let cadreperso = document.getElementById('cadre');
+    let cadremonstre = document.getElementById('cadreMonstre');
     let cent = 350;
 
     combatBackground.onload = function(){
@@ -13,21 +15,17 @@ $('body').ready(function(){
         ctx.clearRect(0, 0, 1280, 720);
 
         ctx.drawImage(combatBackground,0,0,1280,720);
-        ctx.drawImage(ennemi,840,240,120,218)
+        ctx.drawImage(ennemi,840,240,120,218);
 
-        ctx.drawImage(personnage,180,380,209,250)
+        ctx.drawImage(personnage,180,380,209,250);
 
-        ctx.fillStyle = 'rgb(200, 0, 0)';
+        ctx.drawImage(cadreperso,60,60,413,40);
+        ctx.fillStyle = 'rgb(199, 5, 0)';
         ctx.fillRect(70, 70, 350, 20);
 
-        ctx.fillStyle = 'black';
-        ctx.strokeRect(70, 70, 350, 20);
-
-        ctx.fillStyle = 'rgb(200, 0, 0)';
+        ctx.drawImage(cadremonstre,840,60,370,40);
+        ctx.fillStyle = 'rgb(199, 5, 0)';
         ctx.fillRect(850, 70, 350, 20);
-
-        ctx.fillStyle = 'black';
-        ctx.strokeRect(850, 70, 350, 20);
          
         
         combat();
@@ -37,16 +35,16 @@ $('body').ready(function(){
             //      = hero.hp
             var pourcent = (hero.hp*350) / (100*hero.level)
 
-            ctx.fillStyle = 'rgb(0, 200, 0)';
+            ctx.fillStyle = 'rgb(0, 128, 0)';
             ctx.fillRect(70, 70, pourcent, 20);
         }else{
-            ctx.fillStyle = 'rgb(0, 200, 0)';
+            ctx.fillStyle = 'rgb(0, 128, 0)';
             ctx.fillRect(70, 70, 0, 20);
         }
 
         let level = document.getElementById('niv1'); //A la place du 1 tu met hero.level faut rajouter des les niveaux dans combat html avec la class jeux
 
-        ctx.drawImage(level,450,50,50,50)
+        ctx.drawImage(level,438,71,18,18)
            
         //vie Personnage
         
@@ -59,28 +57,19 @@ $('body').ready(function(){
             //      = hero.hp
             var pourcent = (monstre.hp*350) / (100*hero.level)
 
-            ctx.fillStyle = 'rgb(0, 200, 0)';
+            ctx.fillStyle = 'rgb(0, 128, 0)';
             ctx.fillRect(1200-pourcent, 70, pourcent, 20);
         }else{
-            ctx.fillStyle = 'rgb(0, 200, 0)';
+            ctx.fillStyle = 'rgb(0, 1028, 0)';
             ctx.fillRect(850, 70, 0, 20);
         }
 
         
             
            
-        },1000);
+        },20);
     }
-    
-    
+      
 });
-
-
-
-
-
-
-
-
 
 });
