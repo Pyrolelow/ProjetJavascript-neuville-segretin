@@ -67,7 +67,7 @@ $('document').ready(function() {
 		
 		}
 
-		if(niveauHaut < 10 && niveauHaut > 1){			
+		if(niveauHaut <= 10 && niveauHaut > 1){			
 			armeEquipement.attr('src', "images/hautboisactive.png");
 		}if(niveauHaut < 20 && niveauHaut > 10){
 			armeEquipement.attr('src', "images/hautcuiractive.png");						

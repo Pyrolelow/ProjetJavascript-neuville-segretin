@@ -8,12 +8,11 @@ $('document').ready(function(){
     monstre = new Monstre();
     var vieRestanteMonstre;
     var vieRestanteHero;
-
     if(localStorage.getItem('niveauPersonnage')){
         hero.level = parseInt(localStorage.getItem('niveauPersonnage'));
         monstre.hp = 100*hero.level;
         hero.hp = 100*hero.level;
-        monstre.dmg = 3*hero.level;
+        monstre.dmg = 3*hero.level*2;
         if(localStorage.getItem("expAc"))
         hero.experienceActuel = parseInt(localStorage.getItem("expAc"));
     }

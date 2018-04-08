@@ -69,7 +69,7 @@ $('document').ready(function() {
 		
 		}
 
-		if(niveauBouclier < 10 && niveauBouclier > 1){			
+		if(niveauBouclier <= 10 && niveauBouclier > 1){			
 			armeEquipement.attr('src', "images/bouclierboisactive.png");
 		}if(niveauBouclier < 20 && niveauBouclier > 10){
 			armeEquipement.attr('src', "images/boucliercuiractive.png");						

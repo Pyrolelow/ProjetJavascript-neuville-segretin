@@ -71,7 +71,7 @@ $('document').ready(function() {
 			niveauEpee = 30;
 		}
 
-		if(niveauEpee < 10 && niveauEpee > 1){			
+		if(niveauEpee <= 10 && niveauEpee > 1){			
 			armeEquipement.attr('src', "images/epeeboisactive.png");
 		}else if(niveauEpee < 20 && niveauEpee > 10){
 			armeEquipement.attr('src', "images/epeecuiractive.png");						

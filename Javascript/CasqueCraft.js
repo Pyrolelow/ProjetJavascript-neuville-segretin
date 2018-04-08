@@ -35,8 +35,7 @@ $('document').ready(function() {
 		if(niveauCasque < 10){
 			casquePrix[0] += 30*niveauCasque;
 			casquePrix[1] += 20*niveauCasque;
-			casquePrix[2] += 15*niveauCasque;
-			console.log("b : "+casquePrix[0]+" c : "+casquePrix[1]+" f : "+casquePrix[2])
+			casquePrix[2] += 15*niveauCasque;			
 		}else if(niveauCasque < 20 && niveauCasque >= 10){
 			casquePrix[0] = 300*(niveauCasque-9);
 			casquePrix[1] = 1000*(niveauCasque-9);
@@ -64,10 +63,9 @@ $('document').ready(function() {
 			casqueText.replaceWith('<p id="casqueText"><img class="itemImage" src="images/casque_en_fer1.png"/> Niveau max atteint ! </p>');
 			armeEquipement.attr('src', "images/casquefer1active.png");
 			niveauCasque = 30;
-		
 		}
 
-		if(niveauCasque < 10 && niveauCasque > 1){			
+		if(niveauCasque <= 10 && niveauCasque > 1){			
 			armeEquipement.attr('src', "images/casqueboisactive.png");
 		}if(niveauCasque < 20 && niveauCasque > 10){
 			armeEquipement.attr('src', "images/casquecuiractive.png");						

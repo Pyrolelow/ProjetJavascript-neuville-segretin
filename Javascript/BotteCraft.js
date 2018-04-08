@@ -39,7 +39,6 @@ $('document').ready(function() {
 			bottePrix[0] += 30*niveauBotte;
 			bottePrix[1] += 20*niveauBotte;
 			bottePrix[2] += 0*niveauBotte;
-			console.log("b : "+bottePrix[0]+" c : "+bottePrix[1]+" f : "+bottePrix[2])
 		}else if(niveauBotte < 20 && niveauBotte >= 10){
 			bottePrix[0] = 300*(niveauBotte-9);
 			bottePrix[1] = 1000*(niveauBotte-9);
@@ -69,7 +68,7 @@ $('document').ready(function() {
 			niveauBotte = 30;
 		}
 
-		if(niveauBotte < 10 && niveauBotte > 1){			
+		if(niveauBotte <= 10 && niveauBotte > 1){			
 			armeEquipement.attr('src', "images/botteboisactive.png");
 		}if(niveauBotte < 20 && niveauBotte > 10){
 			armeEquipement.attr('src', "images/bottecuiractive.png");						
