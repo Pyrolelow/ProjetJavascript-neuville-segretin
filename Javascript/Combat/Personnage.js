@@ -1,4 +1,4 @@
-//niveau max : 50
+//niveau max : 55
 //2 monstres par niveau qui se succèdes
 //1 monstre donne 50exp quelque soit le niveau
 //on level up après avoir tué les deux monstres
