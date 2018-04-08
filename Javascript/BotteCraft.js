@@ -32,8 +32,6 @@ $('document').ready(function() {
 
  	function setPrixBotteBois() {
 		
-		
-		
 
 		if(niveauBotte < 10){
 			bottePrix[0] += 30*niveauBotte;
@@ -97,40 +95,41 @@ $('document').ready(function() {
 				console.log(niveauBotte);
 				setPrixBotteBois();
 				hero.armure = hero.armure+1;
-				}else{
-					alert("Il vous faut plus de ressources pour fabriquer cet item !");
-				}
-			}else if (niveauBotte < 20 && niveauBotte >= 10){
-				if (bottePrix[0] <= nombreDeBois && bottePrix[1] <= nombreDeCuir 
-					&& bottePrix[2] <= nombreDeFer){					
-					let audio = new Audio("Sons/sonEnclume.mp3");
-					audio.play();
-					nombreDeBois = nombreDeBois - bottePrix[0];
-					nombreDeCuir = nombreDeCuir - bottePrix[1];
-					nombreDeFer = nombreDeFer - bottePrix[2];
-					niveauBotte++;
-					setPrixBotteBois();
-					hero.armure = hero.armure+2;
-					}else{
-						alert("Il vous faut plus de ressources pour fabriquer cet item !");
-					}
-			}else if(niveauBotte < 30 && niveauBotte >= 20){
-				if (bottePrix[0] <= nombreDeBois && bottePrix[1] <= nombreDeCuir 
-					&& bottePrix[2] <= nombreDeFer){
-					let audio = new Audio("Sons/sonEnclume.mp3");
-					audio.play();
-					nombreDeBois = nombreDeBois - bottePrix[0];
-					nombreDeCuir = nombreDeCuir - bottePrix[1];
-					nombreDeFer = nombreDeFer - bottePrix[2];
-					niveauBotte++;
-					setPrixBotteBois();
-					hero.armure = hero.armure+3;
-					}else{
-						alert("Il vous faut plus de ressources pour fabriquer cet item !");
-					}
 			}else{
-				alert("Vous avez atteint le niveau max pour cet item !");
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}
+		}else if (niveauBotte < 20 && niveauBotte >= 10){
+			if (bottePrix[0] <= nombreDeBois && bottePrix[1] <= nombreDeCuir 
+				&& bottePrix[2] <= nombreDeFer){					
+				let audio = new Audio("Sons/sonEnclume.mp3");
+				audio.play();
+				nombreDeBois = nombreDeBois - bottePrix[0];
+				nombreDeCuir = nombreDeCuir - bottePrix[1];
+				nombreDeFer = nombreDeFer - bottePrix[2];
+				niveauBotte++;
+				setPrixBotteBois();
+				hero.armure = hero.armure+2;
+			}else{
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
+			}
+		}else if(niveauBotte < 30 && niveauBotte >= 20){
+			if (bottePrix[0] <= nombreDeBois && bottePrix[1] <= nombreDeCuir 
+				&& bottePrix[2] <= nombreDeFer){
+				let audio = new Audio("Sons/sonEnclume.mp3");
+				audio.play();
+				nombreDeBois = nombreDeBois - bottePrix[0];
+				nombreDeCuir = nombreDeCuir - bottePrix[1];
+				nombreDeFer = nombreDeFer - bottePrix[2];
+				niveauBotte++;
+				setPrixBotteBois();
+				hero.armure = hero.armure+3;
+			}else{
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
+			}
+		}else{
+			alert("Vous avez atteint le niveau max pour cet item !");
+		}
+		
 	});
 
 	if(localStorage.getItem('niveauBotte')){

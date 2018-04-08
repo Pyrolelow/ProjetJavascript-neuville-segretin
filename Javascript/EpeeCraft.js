@@ -1,11 +1,7 @@
 var niveauEpee = 1;
 var epeeBoisPrix = [];
 
-
-
 $('document').ready(function() {
-
-	
 
 	var epee = $("#epee");
 	epeeBoisPrix = [5,2,0];
@@ -20,8 +16,6 @@ $('document').ready(function() {
   	function afficherNiveauEpeeBois(){
   		niveauEpeeAffiche.text(niveauEpee);
   	}
-
-	
 
   	function afficherPrixBoisEpeeBois () {
     	prixBoisEpeeBois.text(epeeBoisPrix[0]);
@@ -83,8 +77,6 @@ $('document').ready(function() {
 	    afficherPrixCuirEpeeBois();
 	    afficherPrixFerEpeeBois();
 
-		
-
 	    afficherNiveauEpeeBois();
  	}
 
@@ -101,40 +93,41 @@ $('document').ready(function() {
 				setPrixEpeeBois();
 				hero.dommage = hero.dommage + 1;
 				localStorage.setItem("dommage",hero.dommage);
-				}else{
-					alert("Il vous faut plus de ressources pour fabriquer cet item !");
-				}
-			}else if (niveauEpee < 20 && niveauEpee >= 10){
-				if (epeeBoisPrix[0] <= nombreDeBois && epeeBoisPrix[1] <= nombreDeCuir 
-					&& epeeBoisPrix[2] <= nombreDeFer){
-					let audio = new Audio("Sons/sonEnclume.mp3");
-					audio.play();
-					nombreDeBois = nombreDeBois - epeeBoisPrix[0];
-					nombreDeCuir = nombreDeCuir - epeeBoisPrix[1];
-					nombreDeFer = nombreDeFer - epeeBoisPrix[2];
-					niveauEpee++;
-					setPrixEpeeBois();
-					hero.dommage = hero.dommage + 3;
-					}else{
-						alert("Il vous faut plus de ressources pour fabriquer cet item !");
-					}
-			}else if(niveauEpee < 30 && niveauEpee >= 20){
-				if (epeeBoisPrix[0] <= nombreDeBois && epeeBoisPrix[1] <= nombreDeCuir 
-					&& epeeBoisPrix[2] <= nombreDeFer){
-					let audio = new Audio("Sons/sonEnclume.mp3");
-					audio.play();
-					nombreDeBois = nombreDeBois - epeeBoisPrix[0];
-					nombreDeCuir = nombreDeCuir - epeeBoisPrix[1];
-					nombreDeFer = nombreDeFer - epeeBoisPrix[2];
-					niveauEpee++;
-					setPrixEpeeBois();
-					hero.dommage = hero.dommage + 5;
-					}else{
-						alert("Il vous faut plus de ressources pour fabriquer cet item !");
-					}
 			}else{
-				alert("Vous avez atteint le niveau max pour cet item !");
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}
+		}else if (niveauEpee < 20 && niveauEpee >= 10){
+			if (epeeBoisPrix[0] <= nombreDeBois && epeeBoisPrix[1] <= nombreDeCuir 
+				&& epeeBoisPrix[2] <= nombreDeFer){
+				let audio = new Audio("Sons/sonEnclume.mp3");
+				audio.play();
+				nombreDeBois = nombreDeBois - epeeBoisPrix[0];
+				nombreDeCuir = nombreDeCuir - epeeBoisPrix[1];
+				nombreDeFer = nombreDeFer - epeeBoisPrix[2];
+				niveauEpee++;
+				setPrixEpeeBois();
+				hero.dommage = hero.dommage + 3;
+			}else{
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
+			}
+		}else if(niveauEpee < 30 && niveauEpee >= 20){
+			if (epeeBoisPrix[0] <= nombreDeBois && epeeBoisPrix[1] <= nombreDeCuir 
+				&& epeeBoisPrix[2] <= nombreDeFer){
+				let audio = new Audio("Sons/sonEnclume.mp3");
+				audio.play();
+				nombreDeBois = nombreDeBois - epeeBoisPrix[0];
+				nombreDeCuir = nombreDeCuir - epeeBoisPrix[1];
+				nombreDeFer = nombreDeFer - epeeBoisPrix[2];
+				niveauEpee++;
+				setPrixEpeeBois();
+				hero.dommage = hero.dommage + 5;
+			}else{
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
+			}
+		}else{
+			alert("Vous avez atteint le niveau max pour cet item !");
+		}
+
 	});
 
 	if(localStorage.getItem('niveauEpee')){

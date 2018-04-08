@@ -98,37 +98,37 @@ $('document').ready(function() {
 			}else{
 				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}
-			}else if (niveauHaut < 20 && niveauHaut >= 10){
-				if (hautPrix[0] <= nombreDeBois && hautPrix[1] <= nombreDeCuir 
-					&& hautPrix[2] <= nombreDeFer){					
-					let audio = new Audio("Sons/sonEnclume.mp3");
-					audio.play();
-					nombreDeBois = nombreDeBois - hautPrix[0];
-					nombreDeCuir = nombreDeCuir - hautPrix[1];
-					nombreDeFer = nombreDeFer - hautPrix[2];
-					niveauHaut++;
-					setPrixHaut();
-					hero.armure = hero.armure+2;
-					}else{
-						alert("Il vous faut plus de ressources pour fabriquer cet item !");
-					}
-			}else if(niveauHaut < 30 && niveauHaut >= 20){
-				if (hautPrix[0] <= nombreDeBois && hautPrix[1] <= nombreDeCuir 
-					&& hautPrix[2] <= nombreDeFer){
-					let audio = new Audio("Sons/sonEnclume.mp3");
-					audio.play();
-					nombreDeBois = nombreDeBois - hautPrix[0];
-					nombreDeCuir = nombreDeCuir - hautPrix[1];
-					nombreDeFer = nombreDeFer - hautPrix[2];
-					niveauHaut++;
-					setPrixHaut();
-					hero.armure = hero.armure+3;
-					}else{
-						alert("Il vous faut plus de ressources pour fabriquer cet item !");
-					}
+		}else if (niveauHaut < 20 && niveauHaut >= 10){
+			if (hautPrix[0] <= nombreDeBois && hautPrix[1] <= nombreDeCuir 
+				&& hautPrix[2] <= nombreDeFer){					
+				let audio = new Audio("Sons/sonEnclume.mp3");
+				audio.play();
+				nombreDeBois = nombreDeBois - hautPrix[0];
+				nombreDeCuir = nombreDeCuir - hautPrix[1];
+				nombreDeFer = nombreDeFer - hautPrix[2];
+				niveauHaut++;
+				setPrixHaut();
+				hero.armure = hero.armure+2;
 			}else{
-				alert("Vous avez atteint le niveau max pour cet item !");
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}
+		}else if(niveauHaut < 30 && niveauHaut >= 20){
+			if (hautPrix[0] <= nombreDeBois && hautPrix[1] <= nombreDeCuir 
+				&& hautPrix[2] <= nombreDeFer){
+				let audio = new Audio("Sons/sonEnclume.mp3");
+				audio.play();
+				nombreDeBois = nombreDeBois - hautPrix[0];
+				nombreDeCuir = nombreDeCuir - hautPrix[1];
+				nombreDeFer = nombreDeFer - hautPrix[2];
+				niveauHaut++;
+				setPrixHaut();
+				hero.armure = hero.armure+3;
+			}else{
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
+			}
+		}else{
+			alert("Vous avez atteint le niveau max pour cet item !");
+		}
 		
 	});
 

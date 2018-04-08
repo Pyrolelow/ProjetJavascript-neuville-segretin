@@ -1,4 +1,5 @@
 $('document').ready(function(){
+
     if(localStorage.getItem("dommage")){
         hero.dommage = parseInt(localStorage.getItem("dommage"));
     }
@@ -75,7 +76,5 @@ $('document').ready(function(){
         autoForgeron = 5*nbForgeron;
         document.getElementById("prixForgeron").innerHTML = nbForgeron;
     }
-
-    
 
 })

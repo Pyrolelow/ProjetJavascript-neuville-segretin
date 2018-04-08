@@ -77,7 +77,6 @@ $('document').ready(function() {
 	    afficherPrixCuirCasque();
 	    afficherPrixFerCasque();
 
-
 	    afficherNiveauCasque();
  	}
 
@@ -97,37 +96,37 @@ $('document').ready(function() {
 			}else{
 				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}
-			}else if (niveauCasque < 20 && niveauCasque >= 10){
-				if (casquePrix[0] <= nombreDeBois && casquePrix[1] <= nombreDeCuir 
-					&& casquePrix[2] <= nombreDeFer){					
-					let audio = new Audio("Sons/sonEnclume.mp3");
-					audio.play();
-					nombreDeBois = nombreDeBois - casquePrix[0];
-					nombreDeCuir = nombreDeCuir - casquePrix[1];
-					nombreDeFer = nombreDeFer - casquePrix[2];
-					niveauCasque++;
-					setPrixCasque();
-					hero.armure = hero.armure+2;
-					}else{
-						alert("Il vous faut plus de ressources pour fabriquer cet item !");
-					}
-			}else if(niveauCasque < 30 && niveauCasque >= 20){
-				if (casquePrix[0] <= nombreDeBois && casquePrix[1] <= nombreDeCuir 
-					&& casquePrix[2] <= nombreDeFer){
-					let audio = new Audio("Sons/sonEnclume.mp3");
-					audio.play();
-					nombreDeBois = nombreDeBois - casquePrix[0];
-					nombreDeCuir = nombreDeCuir - casquePrix[1];
-					nombreDeFer = nombreDeFer - casquePrix[2];
-					niveauCasque++;
-					setPrixCasque();
-					hero.armure = hero.armure+3;
-					}else{
-						alert("Il vous faut plus de ressources pour fabriquer cet item !");
-					}
+		}else if (niveauCasque < 20 && niveauCasque >= 10){
+			if (casquePrix[0] <= nombreDeBois && casquePrix[1] <= nombreDeCuir 
+				&& casquePrix[2] <= nombreDeFer){					
+				let audio = new Audio("Sons/sonEnclume.mp3");
+				audio.play();
+				nombreDeBois = nombreDeBois - casquePrix[0];
+				nombreDeCuir = nombreDeCuir - casquePrix[1];
+				nombreDeFer = nombreDeFer - casquePrix[2];
+				niveauCasque++;
+				setPrixCasque();
+				hero.armure = hero.armure+2;
 			}else{
-				alert("Vous avez atteint le niveau max pour cet item !");
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}
+		}else if(niveauCasque < 30 && niveauCasque >= 20){
+			if (casquePrix[0] <= nombreDeBois && casquePrix[1] <= nombreDeCuir 
+				&& casquePrix[2] <= nombreDeFer){
+				let audio = new Audio("Sons/sonEnclume.mp3");
+				audio.play();
+				nombreDeBois = nombreDeBois - casquePrix[0];
+				nombreDeCuir = nombreDeCuir - casquePrix[1];
+				nombreDeFer = nombreDeFer - casquePrix[2];
+				niveauCasque++;
+				setPrixCasque();
+				hero.armure = hero.armure+3;
+			}else{
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
+			}
+		}else{
+			alert("Vous avez atteint le niveau max pour cet item !");
+		}
 		
 	});
 
@@ -135,9 +134,5 @@ $('document').ready(function() {
 		niveauCasque = parseInt(localStorage.getItem('niveauCasque'));
 		setPrixCasque();
 	}
-			
-			
-			
-
 
 });

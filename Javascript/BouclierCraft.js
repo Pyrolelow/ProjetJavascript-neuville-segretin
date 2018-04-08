@@ -1,6 +1,5 @@
-
-	var bouclierPrix = [];
-	var niveauBouclier = 1;
+var bouclierPrix = [];
+var niveauBouclier = 1;
 
 $('document').ready(function() {
 
@@ -82,7 +81,7 @@ $('document').ready(function() {
 	    afficherPrixFerBouclierBois();
 
 	    afficherNiveauBouclierBois();
-}
+	}
 
 	bouclierBois.click(function(){
 		if(niveauBouclier <=10){
@@ -100,37 +99,37 @@ $('document').ready(function() {
 			}else{
 				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}
-			}else if (niveauBouclier < 20 && niveauBouclier >= 10){
-				if (bouclierPrix[0] <= nombreDeBois && bouclierPrix[1] <= nombreDeCuir 
-					&& bouclierPrix[2] <= nombreDeFer){					
-					let audio = new Audio("Sons/sonEnclume.mp3");
-					audio.play();
-					nombreDeBois = nombreDeBois - bouclierPrix[0];
-					nombreDeCuir = nombreDeCuir - bouclierPrix[1];
-					nombreDeFer = nombreDeFer - bouclierPrix[2];
-					niveauBouclier++;
-					setPrixBouclierBois();
-					hero.armure = hero.armure+2;
-					}else{
-						alert("Il vous faut plus de ressources pour fabriquer cet item !");
-					}
-			}else if(niveauBouclier < 30 && niveauBouclier >= 20){
-				if (bouclierPrix[0] <= nombreDeBois && bouclierPrix[1] <= nombreDeCuir 
-					&& bouclierPrix[2] <= nombreDeFer){
-					let audio = new Audio("Sons/sonEnclume.mp3");
-					audio.play();
-					nombreDeBois = nombreDeBois - bouclierPrix[0];
-					nombreDeCuir = nombreDeCuir - bouclierPrix[1];
-					nombreDeFer = nombreDeFer - bouclierPrix[2];
-					niveauBouclier++;
-					setPrixBouclierBois();
-					hero.armure = hero.armure+3;
-					}else{
-						alert("Il vous faut plus de ressources pour fabriquer cet item !");
-					}
+		}else if (niveauBouclier < 20 && niveauBouclier >= 10){
+			if (bouclierPrix[0] <= nombreDeBois && bouclierPrix[1] <= nombreDeCuir 
+				&& bouclierPrix[2] <= nombreDeFer){					
+				let audio = new Audio("Sons/sonEnclume.mp3");
+				audio.play();
+				nombreDeBois = nombreDeBois - bouclierPrix[0];
+				nombreDeCuir = nombreDeCuir - bouclierPrix[1];
+				nombreDeFer = nombreDeFer - bouclierPrix[2];
+				niveauBouclier++;
+				setPrixBouclierBois();
+				hero.armure = hero.armure+2;
 			}else{
-				alert("Vous avez atteint le niveau max pour cet item !");
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
 			}
+		}else if(niveauBouclier < 30 && niveauBouclier >= 20){
+			if (bouclierPrix[0] <= nombreDeBois && bouclierPrix[1] <= nombreDeCuir 
+				&& bouclierPrix[2] <= nombreDeFer){
+				let audio = new Audio("Sons/sonEnclume.mp3");
+				audio.play();
+				nombreDeBois = nombreDeBois - bouclierPrix[0];
+				nombreDeCuir = nombreDeCuir - bouclierPrix[1];
+				nombreDeFer = nombreDeFer - bouclierPrix[2];
+				niveauBouclier++;
+				setPrixBouclierBois();
+				hero.armure = hero.armure+3;
+			}else{
+				alert("Il vous faut plus de ressources pour fabriquer cet item !");
+			}
+		}else{
+			alert("Vous avez atteint le niveau max pour cet item !");
+		}
 		
 	});
 

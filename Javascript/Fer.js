@@ -10,15 +10,14 @@ var prixForgeron = 1000;
 
 $('document').ready(function() {
   
-
   baseInterval = 1000;
   let titre = $("title");
   var zoom = 0;
 
+
   var image = document.getElementById("lingotFer");
   var resultat = document.getElementById("IndicateurFer");
   
-
 
   let marteau = $("#clickMarteau");
   var achatMart = document.getElementById('nbMarteau');
@@ -33,7 +32,6 @@ $('document').ready(function() {
   document.onload = function () { 
     afficherScore();
   }
-
 
 
   function afficherScore () {

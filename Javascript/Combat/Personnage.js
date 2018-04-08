@@ -1,9 +1,9 @@
 //niveau max : 55
-//2 monstres par niveau qui se succèdes
+//2 monstres par niveau qui se succède
 //1 monstre donne 50exp quelque soit le niveau
 //on level up après avoir tué les deux monstres
 //Pour combattre besoin d'un équipement de niveau supérieur
-//chaque type d'équipement s'améliore 10 fois niveau (équipement cuir disponible niveau 20, fer1 niveau 30, etc..)
+//chaque type d'équipement s'améliore 10 fois niveau (équipement cuir disponible niveau 10, fer1 niveau 20, etc..)
 //Equipement supérieur se débloque après avoir fini l'équipement inférieur
 
 
