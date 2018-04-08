@@ -47,10 +47,14 @@ $('body').ready(function(){
             ctx.fillStyle = 'rgb(0, 0, 0)';
             ctx.font = '25px Althea-Bold';
             ctx.fillText(hero.level, 442, 88);
-        }else{
+        }else if(hero.level>9 && hero.level<=99){
             ctx.fillStyle = 'rgb(0, 0, 0)';
             ctx.font = '25px Althea-Bold';
             ctx.fillText(hero.level, 437, 88);
+        }else{
+            ctx.fillStyle = 'rgb(0, 0, 0)';
+            ctx.font = '25px Althea-Bold';
+            ctx.fillText(hero.level, 430, 88);
         }
         
         //Vie Monstre
